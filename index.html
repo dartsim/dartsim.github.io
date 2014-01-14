@@ -1,25 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>DART</title>
-		<style>
-			*{font-family: sans-serif}
-		</style>
-	</head>
-	<body>
-                <img src="./DART logo.jpg" alt="logo" style="vertical-align:middle" width="300">
-		
-		<ul>
-			<li>Download DART: <a href="https://github.com/dartsim/dart/wiki/Windows-Installation">Windows</a> / <a href="https://github.com/dartsim/dart/wiki/Linux-installation">Linux</a> / <a href="https://github.com/dartsim/dart/wiki/Mac-installation">Mac</a>
-			<li><a href="https://www.github.com/dartsim/dart">Source code on GitHub</a>
-			<li>Current build status: <a href="https://travis-ci.org/dartsim/dart"><img src="https://travis-ci.org/dartsim/dart.png?branch=master" alt="Current build status" style="vertical-align:middle"></a>
-			<li><a href="https://github.com/dartsim/dart/wiki/Version-history">Version history</a>
-			<li><a href="http://dart.golems.org/dart/index.html">Documentation<a>
-			<li><a href="https://github.com/dartsim/dart/issues">Report issue</a>
-			<li><a href="https://github.com/dartsim/dart/wiki/Version-history">Using DART in Gazebo</a>
-		</ul>
+  <head>
+    <title>DART</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
 
-		<p>DART (Dynamic Animation and Robotics Toolkit) is a collaborative, cross-platform, open source library created by the Georgia Tech <a href="http://www.cc.gatech.edu/graphics/">Graphics Lab</a> and <a href="http://www.golems.org/">Humanoid Robotics Lab</a>. The library provides data structures and algorithms for kinematic and dynamic applications in robotics and computer animation. DART is distinguished by its accuracy and stability due to its use of generalized coordinates to represent articulated rigid body systems and computation of Lagrange's equations derived from D.Alembert's principle to describe the dynamics of motion. For developers, in contrast to many popular physics engines which view the simulator as a black box, DART gives full access to internal kinematic and dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces, transformation matrices and their derivatives. DART also provides efficient computation of Jacobian matrices for arbitrary body points and coordinate frames. Contact and collision are handled using an implicit time-stepping, velocity-based LCP (linear-complementarity problem) to guarantee non-penetration, directional friction, and approximated Coulomb friction cone conditions. For collision detection, DART uses FCL developed by Willow Garage and the UNC Gamma Lab. DART has applications in robotics and computer animation because it features a multibody dynamic simulator and tools for control and motion planning. Multibody dynamic simulation in DART is an extension of RTQL8, an open source software created by the Georgia Tech Graphics Lab. For ease of use, we separately provide the open source GRIP environment library which simplifies user interface, world loading, visualization and video recording.</p>
-		<p>DART is fully integrated with <a href="http://gazebosim.org">Gazebo 2.0</a>, a multi-robot simulator for outdoor environments. DART supports most features provided in Gazebo, including the link structure, sensor simulation, and all the joint types. DART also supports models in URDF, SDF, and VSK file formats.</p>
-	</body>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+              <a href="https://www.github.com/dartsim/dart"><span class="icon-large icon-github"></span>Source code on GitHub</a>
+          </li>
+          <li>
+              <a href="https://github.com/dartsim/dart/wiki/Version-history">Version history</a>
+          </li>
+          <li>
+              <a href="http://dart.golems.org/dart/index.html">Documentation</a>
+          </li>
+          <li>
+              <a href="https://github.com/dartsim/dart/issues">Report issue</a>
+          </li>
+          <li>
+              <a href="https://github.com/dartsim/dart/wiki/Version-history">Using DART in Gazebo</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="https://travis-ci.org/dartsim/dart"><img src="https://travis-ci.org/dartsim/dart.png?branch=master" alt="Current build status" style="vertical-align:middle"></a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Download DART<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://github.com/dartsim/dart/wiki/Windows-Installation">Windows</a></li>
+              <li><a href="https://github.com/dartsim/dart/wiki/Linux-installation">Linux</a></li>
+              <li><a href="https://github.com/dartsim/dart/wiki/Mac-installation">Mac</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="container">
+      <div class="well well-sm" style="margin-top: 10px;">
+        <div class="pull-left" style="border-radius: 5px; background-color: white; margin: 10px; border: 1px solid #333;">
+          <img src="DART logo.jpg" alt="logo" style="margin: 20px;" width="300">
+        </div>
+        <p>
+          DART (Dynamic Animation and Robotics Toolkit) is a collaborative, cross-platform, open source library created by the Georgia Tech <a href="http://www.cc.gatech.edu/graphics/">Graphics Lab</a> and <a href="http://www.golems.org/">Humanoid Robotics Lab</a>. The library provides data structures and algorithms for kinematic and dynamic applications in robotics and computer animation. DART is distinguished by its accuracy and stability due to its use of generalized coordinates to represent articulated rigid body systems and computation of Lagrange's equations derived from D.Alembert's principle to describe the dynamics of motion. For developers, in contrast to many popular physics engines which view the simulator as a black box, DART gives full access to internal kinematic and dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces, transformation matrices and their derivatives. DART also provides efficient computation of Jacobian matrices for arbitrary body points and coordinate frames. Contact and collision are handled using an implicit time-stepping, velocity-based LCP (linear-complementarity problem) to guarantee non-penetration, directional friction, and approximated Coulomb friction cone conditions. For collision detection, DART uses FCL developed by Willow Garage and the UNC Gamma Lab. DART has applications in robotics and computer animation because it features a multibody dynamic simulator and tools for control and motion planning. Multibody dynamic simulation in DART is an extension of RTQL8, an open source software created by the Georgia Tech Graphics Lab. For ease of use, we separately provide the open source GRIP environment library which simplifies user interface, world loading, visualization and video recording.
+        </p>
+        <p>
+          DART is fully integrated with <a href="http://gazebosim.org">Gazebo 2.0</a>, a multi-robot simulator for outdoor environments. DART supports most features provided in Gazebo, including the link structure, sensor simulation, and all the joint types. DART also supports models in URDF, SDF, and VSK file formats.
+        </p>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  </body>
 </html>
