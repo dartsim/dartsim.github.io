@@ -465,7 +465,7 @@ horizontal deviation between the center of mass and the center of the
 left foot, as well as the vertical distance of the four corners of the
 left foot from the ground:
 
-<img src="IKObjective.png" width="180">
+{% include image.html file="tutorials/biped_IKObjective.png" alt="IK Objective" max-width="180"  caption="" %}
 
 where <b>c</b> and <b>p</b> indicate the projected center of mass and center of
 pressure on the ground, and *p<sub>i</sub>* indicates the vertical height of one
