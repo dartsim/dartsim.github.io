@@ -79,11 +79,11 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Install DART on Ubuntu
+    - title: Install DART on Ubuntu (recommended)
       url: /mydoc_install_dart_on_ubuntu.html
       output: web, pdf
 
-    - title: Install DART on Mac
+    - title: Install DART on Mac (recommended)
       url: /mydoc_install_dart_on_mac.html
       output: web, pdf
 
@@ -94,6 +94,10 @@ entries:
   - title: Documentation
     output: web, pdf
     folderitems:
+
+    - title: Tutorials
+      url: /tutorials_introduction.html
+      output: web, pdf
 
     - title: API Documentation
       external_url: http://dartsim.github.io/dart/
