@@ -12,9 +12,8 @@ toc: false
 | Thumbnail | Software |
 |-----------|--------|
 | <img src="http://www.gazebosim.org/assets/logos/gazebo_vert_pos_small-cae32db40df918570d1c43f1fccf1aa6.png"> | **[Gazebo](http://www.gazebosim.org/)** <br> Gazebo simulates multipe robots in a 3D environment, with extensive dynamic integration between objects. Gazebo supports multiple physics engines: ODE, Bullet, DART, and Simbody. [website](http://www.gazebosim.org/), [source on bitbucket](https://bitbucket.org/osrf/gazebo) |
+|  | **[PyDart2](https://github.com/sehoonha/pydart2)** <br> A python binding of Dart, an open source simulation package. |
 |  | **[AIKIDO](https://github.com/personalrobotics/aikido)** <br> a C++ library, complete with Python bindings, for solving robotic motion planning and decision making problems. This library is tightly integrated with [DART](http://dartsim.github.io/) for kinematic/dynamics calculations and [OMPL](http://ompl.kavrakilab.org/) for motion planning. |
-
-
 
 ## Academic Research
 
