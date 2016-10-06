@@ -10,10 +10,11 @@ toc: false
 
 ### Direct Link
 
-* [v6.0.1-zip](https://github.com/dartsim/dart/archive/v6.0.1.zip)
-* [v6.0.1-tar.gz](https://github.com/dartsim/dart/archive/v6.0.1.tar.gz)
-* [master-zip](https://github.com/dartsim/dart/zipball/master)
-* [master-tar.gz](https://github.com/dartsim/dart/tarball/master)
+<a href="https://github.com/dartsim/dart/archive/v6.0.1.zip" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> v6.0.1-zip</a>
+<a href="https://github.com/dartsim/dart/archive/v6.0.1.tar.gz" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> v6.0.1-tar.gz</a>
+
+<a href="https://github.com/dartsim/dart/zipball/master" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> master-zip</a>
+<a href="https://github.com/dartsim/dart/tarball/master" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> master-tar.gz</a>
 
 ### GitHub
 
