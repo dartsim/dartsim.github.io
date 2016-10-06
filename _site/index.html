@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" home introduction">
+<title> | DART Website</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.comfeed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> DART</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                
+                
+                <li><a href="tutorials_introduction.html">Tutorials</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Github<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="http://github.com/dartsim/dart" target="_blank">View Project on Github</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/dartsim/dart/issues" target="_blank">Report Issue</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li><a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:jslee02@gmail.com?subject=DART feedback f eedback&body=I have some feedback about the  page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a><li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+    <li class="sidebarTitle">DART 6.1.0</li>
+    
+    
+    
+        
+    
+    <li>
+        <a href="#">Overview</a>
+        <ul>
+            
+            
+            
+            <li class="active"><a href="index.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="mydoc_project_status.html">Project Status</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://github.com/dartsim/dart/milestones" target="_blank">Roadmap and Release Schedule</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://github.com/dartsim/dart/blob/master/CHANGELOG.md" target="_blank">Changelog</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="mydoc_history.html">History</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="https://github.com/dartsim/dart/blob/master/CONTRIBUTING.md#dart-contributors" target="_blank">Constributors</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="mydoc_license.html">License</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Download</a>
+        <ul>
+            
+            
+            
+            <li><a href="mydoc_download.html">Download</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Installation</a>
+        <ul>
+            
+            
+            
+            <li><a href="mydoc_install_dart_on_ubuntu.html">Install DART on Ubuntu</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="mydoc_install_dart_on_mac.html">Install DART on Mac</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="mydoc_install_dart_on_windows.html">Install DART on Windows</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Documentation</a>
+        <ul>
+            
+            
+            
+            <li><a href="http://dartsim.github.io/dart/" target="_blank">API Documentation</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="mydoc_faq.html">FAQ</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="mydoc_skel_file_format.html">SKEL File Format Specification</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    <li>
+        <a href="#">Gallery</a>
+        <ul>
+            
+            
+            
+            <li><a href="mydoc_gallery.html">Gallery</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="mydoc_use_cases.html">Use Cases</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+    <!-- Content Column -->
+    <div class="col-md-9">
+        <div class="post-header">
+   <h1 class="post-title-main"></h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+
+    
+
+    
+
+    <a target="_blank" href="https://github.com/tomjohnson1492/documentation-theme-jekyll/blob/gh-pages/pages//_pages//index.html.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    
+
+    
+
+  <figure><a class="no_icon" target="_blank" href="https://jslee02.github.io/test-webpage2"><img class="docimage" src="images/dart_logo_big.jpg" alt="DART Logo" style="max-width: 480px" /></a><figcaption></figcaption></figure>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>DART (Dynamic Animation and Robotics Toolkit) is a collaborative, cross-platform, open source library created by the <a href="http://www.gatech.edu/">Georgia Tech</a> <a href="http://www.cc.gatech.edu/~karenliu/Home.html">Graphics Lab</a> and <a href="http://www.golems.org/">Humanoid Robotics Lab</a>. The library provides data structures and algorithms for kinematic and dynamic applications in robotics and computer animation. DART is distinguished by its accuracy and stability due to its use of generalized coordinates to represent articulated rigid body systems and Featherstone’s Articulated Body Algorithm to compute the dynamics of motion. For developers, in contrast to many popular physics engines which view the simulator as a black box, DART gives full access to internal kinematic and dynamic quantities, such as the mass matrix, Coriolis and centrifugal forces, transformation matrices and their derivatives. DART also provides an efficient computation of Jacobian matrices for arbitrary body points and coordinate frames. The frame semantics of DART allows users to define arbitrary reference frames (both inertial and non-inertial) and use those frames to specify or request data. For air-tight code safety, forward kinematics and dynamics values are updated automatically through lazy evaluation, making DART suitable for real-time controllers. In addition, DART gives provides flexibility to extend the API for embedding user-provided classes into DART data structures. Contacts and collisions are handled using an implicit time-stepping, velocity-based LCP (linear complementarity problem) to guarantee non-penetration, directional friction, and approximated Coulomb friction cone conditions. DART has applications in robotics and computer animation because it features a multibody dynamic simulator and various kinematic tools for control and motion planning.</p>
+
+<h2 id="features">Features</h2>
+
+<h3 id="general">General</h3>
+
+<ul>
+  <li>Open source under BSD license written in C++.</li>
+  <li>Support Linux, Mac OSX, and Windows.</li>
+  <li>Fully integrated with Gazebo.</li>
+  <li>Support models described in URDF and SDF formats.</li>
+  <li>Provide default integration methods, semi-implicit Euler and RK4, as well as extensible</li>
+  <li>API for other numerical integration methods.</li>
+  <li>Support multiple collision detectors: FCL and Bullet.</li>
+  <li>Support lazy evaluation and automatic update of kinematic and dynamic quantities.</li>
+  <li>Provide extensible API for embedding user-provided classes into DART data structures.</li>
+  <li>Support comprehensive recording of events in simulation history.</li>
+  <li>Support OpenGL and OpenSceneGraph.</li>
+  <li>Provide extensible API to interface with various optimization methods</li>
+</ul>
+
+<h3 id="kinematics">Kinematics</h3>
+
+<ul>
+  <li>Support numerous types of Joint.</li>
+  <li>Support numerous primitive and arbitrary body shapes with customizable inertial and material properties.</li>
+  <li>Support flexible skeleton modeling: cloning and reconfiguring skeletons or subsections of a skeleton.</li>
+  <li>Provide comprehensive access to kinematic states (e.g. transformation, position, velocity, or acceleration) of arbitrary entity and coordinate frames</li>
+  <li>Provide comprehensive access to various Jacobian matrices and their derivatives.</li>
+  <li>Support flexible conversion of coordinate frames.</li>
+  <li>A fully modular inverses kinematics framework</li>
+  <li>A plug-and-play hierarchical whole-body inverse kinematics solver</li>
+</ul>
+
+<h3 id="dynamics">Dynamics</h3>
+
+<ul>
+  <li>Achieve high performance for articulated dynamic systems using Lie Group representation and Featherstone hybrid algorithms.</li>
+  <li>Enforce joints between body nodes exactly using generalized coordinates.</li>
+  <li>Provide comprehensive API for dynamic quantities and their derivatives, such as mass matrix, Coriolis force, gravitational force, other external and internal forces.</li>
+  <li>Support both rigid and soft body nodes.</li>
+  <li>Model viscoelastic joint dynamics with joint friction and hard joint limits.</li>
+  <li>Support various types of actuators.</li>
+  <li>Handle contacts and collisions using an implicit LCP to guarantee non-penetration, directional friction, and approximated Coulomb friction cone conditions.</li>
+  <li>Support ”Island” technique to subdivide constraint handling for efficient performance.</li>
+  <li>Support various Cartesian constraints and provide extensible API for user-defined constraints.</li>
+  <li>Provide multiple constraint solvers: Lemke method, Dantzig method, and PSG method.</li>
+  <li>Support dynamic systems with closed-loop structures.</li>
+</ul>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2016 Georgia Tech and Carnegie Mellon University. All rights reserved. <br />
+ Site last generated: Oct 6, 2016 <br />
+<p><img src="images/dart_logo_big.jpg" alt="DART logo" style="width:128px"/></p>
+                </div>
+            </div>
+</footer>
+
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+
+</body>
+
+</html>

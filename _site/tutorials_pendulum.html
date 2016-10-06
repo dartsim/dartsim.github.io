@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" sample">
+<title>Pendulum | DART Website</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.comfeed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> DART</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                
+                
+                <li><a href="tutorials_introduction.html">Tutorials</a></li>
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Github<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="http://github.com/dartsim/dart" target="_blank">View Project on Github</a></li>
+                        
+                        
+                        
+                        <li><a href="https://github.com/dartsim/dart/issues" target="_blank">Report Issue</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li><a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:jslee02@gmail.com?subject=DART feedback f eedback&body=I have some feedback about the Pendulum page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a><li>
+
+		
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Pendulum">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+<ul id="mysidebar" class="nav">
+    <li class="sidebarTitle">DART Tutorials 6.1.0</li>
+    
+    
+    
+        
+    
+    <li>
+        <a href="#">Tutorials</a>
+        <ul>
+            
+            
+            
+            <li><a href="tutorials_introduction.html">Introduction</a></li>
+            
+            
+            
+            
+            
+            
+            <li class="active"><a href="tutorials_pendulum.html">Pendulum</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tutorials_collisions.html">Collisions</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tutorials_manipulator.html">Manipulator</a></li>
+            
+            
+            
+            
+            
+            
+            <li><a href="tutorials_biped.html">Biped</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+        
+        <!-- if you aren't using the accordion, uncomment this block:
+           <p class="external">
+               <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+           </p>
+           -->
+    </li>
+</ul>
+</div>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+    <!-- Content Column -->
+    <div class="col-md-9">
+        <div class="post-header">
+   <h1 class="post-title-main">Pendulum</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+    
+
+    
+
+    <a target="_blank" href="https://github.com/tomjohnson1492/documentation-theme-jekyll/blob/gh-pages/pages//_pages/tutorials/tutorials_pendulum.html.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    
+
+    
+
+  <h2 id="overview">Overview</h2>
+
+<p>This tutorial will demonstrate some basic interaction with DART’s dynamics
+API during simulation. This will show you how to:</p>
+
+<ul>
+  <li>Create a basic program to simulate a dynamic system</li>
+  <li>Change the colors of shapes</li>
+  <li>Add/remove shapes from visualization</li>
+  <li>Apply internal forces in the joints</li>
+  <li>Apply external forces to the bodies</li>
+  <li>Alter the implicit spring and damping properties of joints</li>
+  <li>Add/remove dynamic constraints</li>
+</ul>
+
+<p>Please reference the source code in <a href="https://github.com/dartsim/dart/blob/release-6.0/tutorials/tutorialMultiPendulum.cpp"><strong>tutorialMultiPendulum.cpp</strong></a> and <a href="https://github.com/dartsim/dart/blob/release-6.0/tutorials/tutorialMultiPendulum-Finished.cpp"><strong>tutorialMultiPendulum-Finished.cpp</strong></a>.</p>
+
+<h2 id="lesson-0-simulate-a-passive-multi-pendulum">Lesson 0: Simulate a passive multi-pendulum</h2>
+
+<p>This is a warmup lesson that demonstrates how to set up a simulation
+program in DART. The example we will use throughout this tutorial is a
+pendulum with five rigid bodies swinging under gravity. DART allows
+the user to build various articulated rigid/soft body systems from
+scratch. It also loads models in URDF, SDF, and SKEL formats as
+demonstrated in the later tutorials.</p>
+
+<p>In DART, an articulated dynamics model is represented by a
+<code class="highlighter-rouge">Skeleton</code>. In the <code class="highlighter-rouge">main</code> function, we first create an empty
+skeleton named <em>pendulum</em>.</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">SkeletonPtr</span> <span class="n">pendulum</span> <span class="o">=</span> <span class="n">Skeleton</span><span class="o">::</span><span class="n">create</span><span class="p">(</span><span class="s">"pendulum"</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>A Skeleton is a structure that consists of <code class="highlighter-rouge">BodyNode</code>s (bodies) which are 
+connected by <code class="highlighter-rouge">Joint</code>s. Every Joint has a child BodyNode, and every BodyNode 
+has a parent Joint. Even the root BodyNode has a Joint that attaches it to the 
+World. In the function <code class="highlighter-rouge">makeRootBody</code>, we create a pair of a
+<code class="highlighter-rouge">BallJoint</code>  and a BodyNode, and attach this pair to the currently
+empty pendulum skeleton.</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">BodyNodePtr</span> <span class="n">bn</span> <span class="o">=</span> <span class="n">pendulum</span><span class="o">-&gt;</span><span class="n">createJointAndBodyNodePair</span><span class="o">&lt;</span><span class="n">BallJoint</span><span class="o">&gt;</span><span class="p">(</span>
+      <span class="nb">nullptr</span><span class="p">,</span> <span class="n">properties</span><span class="p">,</span> <span class="n">BodyNode</span><span class="o">::</span><span class="n">AspectProperties</span><span class="p">(</span><span class="n">name</span><span class="p">)).</span><span class="n">second</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<p>Note that the first parameters is a nullptr, which indicates that
+this new BodyNode is the root of the pendulum. If we wish to append
+the new BodyNode to an existing BodyNode in the pendulum,
+we can do so by passing the pointer of the existing BodyNode as
+the first parameter. In fact, this is how we add more BodyNodes to
+the pendulum in the function <code class="highlighter-rouge">addBody</code>:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">BodyNodePtr</span> <span class="n">bn</span> <span class="o">=</span> <span class="n">pendulum</span><span class="o">-&gt;</span><span class="n">createJointAndBodyNodePair</span><span class="o">&lt;</span><span class="n">RevoluteJoint</span><span class="o">&gt;</span><span class="p">(</span>
+      <span class="n">parent</span><span class="p">,</span> <span class="n">properties</span><span class="p">,</span> <span class="n">BodyNode</span><span class="o">::</span><span class="n">AspectProperties</span><span class="p">(</span><span class="n">name</span><span class="p">)).</span><span class="n">second</span><span class="p">;</span>
+</code></pre>
+</div>
+<p>The simplest way to set up a simulation program in DART is to use
+<code class="highlighter-rouge">SimWindow</code> class. A SimWindow owns an instance of <code class="highlighter-rouge">World</code>  and
+simulates all the Skeletons in the World. In this example, we create a World with the
+pendulum skeleton in it, and assign the World to an instance of
+<code class="highlighter-rouge">MyWindow</code>, a subclass derived from SimWindow.</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">WorldPtr</span> <span class="n">world</span><span class="p">(</span><span class="k">new</span> <span class="n">World</span><span class="p">);</span>
+<span class="n">world</span><span class="o">-&gt;</span><span class="n">addSkeleton</span><span class="p">(</span><span class="n">pendulum</span><span class="p">);</span>
+<span class="n">MyWindow</span> <span class="n">window</span><span class="p">(</span><span class="n">world</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>Every single time step, the <code class="highlighter-rouge">MyWindow::timeStepping</code> function will be called
+and the state of the World will be simulated. The user can override
+the default timeStepping function to customize the simulation
+routine. For example, one can incorporate sensors, actuators, or user
+interaction in the forward simulation.</p>
+
+<h2 id="lesson-1-change-shapes-and-applying-forces">Lesson 1: Change shapes and applying forces</h2>
+
+<p>We have a pendulum with five bodies, and we want to be able to apply forces to
+them during simulation. Additionally, we want to visualize these forces so we
+can more easily interpret what is happening in the simulation. For this reason,
+we’ll discuss visualizing and forces at the same time.</p>
+
+<h3 id="lesson-1a-reset-everything-to-default-appearance">Lesson 1a: Reset everything to default appearance</h3>
+
+<p>At each step, we’ll want to make sure that everything starts out with its default
+appearance. The default is for everything to be blue and there not to be any
+arrow attached to any body.</p>
+
+<p>Find the function named <code class="highlighter-rouge">timeStepping</code> in the <code class="highlighter-rouge">MyWindow</code> class. The top of
+this function is where we will want to reset everything to the default appearance.</p>
+
+<p>Each BodyNode contains visualization <code class="highlighter-rouge">Shape</code>s that will be rendered during
+simulation. In our case, each BodyNode has two shapes:</p>
+
+<ul>
+  <li>One shape to visualize the parent joint</li>
+  <li>One shape to visualize the body</li>
+</ul>
+
+<p>The default appearance for everything is to be colored blue, so we’ll want to
+iterate through these two Shapes in each BodyNode, setting their colors to blue.</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">for</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getNumBodyNodes</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">BodyNode</span><span class="o">*</span> <span class="n">bn</span> <span class="o">=</span> <span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getBodyNode</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+  <span class="k">for</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">;</span> <span class="o">++</span><span class="n">j</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="k">const</span> <span class="n">ShapePtr</span><span class="o">&amp;</span> <span class="n">shape</span> <span class="o">=</span> <span class="n">bn</span><span class="o">-&gt;</span><span class="n">getVisualizationShape</span><span class="p">(</span><span class="n">j</span><span class="p">);</span>
+
+    <span class="n">shape</span><span class="o">-&gt;</span><span class="n">setColor</span><span class="p">(</span><span class="n">dart</span><span class="o">::</span><span class="n">Color</span><span class="o">::</span><span class="n">Blue</span><span class="p">());</span>
+  <span class="p">}</span>
+
+  <span class="c1">// TODO: Remove any arrows
+</span><span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Additionally, there is the possibility that some BodyNodes will have an arrow
+shape attached if the user had been applying an external body force to it. By
+default, this arrow should not be attached, so in the outer for-loop, we should
+check for arrows and remove them:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">bn</span><span class="o">-&gt;</span><span class="n">getNumVisualizationShapes</span><span class="p">()</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">bn</span><span class="o">-&gt;</span><span class="n">removeVisualizationShape</span><span class="p">(</span><span class="n">mArrow</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Now everything will be reset to the default appearance.</p>
+
+<h3 id="lesson-1b-apply-joint-torques-based-on-user-input">Lesson 1b: Apply joint torques based on user input</h3>
+
+<p>The <code class="highlighter-rouge">MyWindow</code> class in this tutorial has a variable called <code class="highlighter-rouge">mForceCountDown</code>
+which is a <code class="highlighter-rouge">std::vector&lt;int&gt;</code> whose entries get set to a value of
+<code class="highlighter-rouge">default_countdown</code> each time the user presses a number key. If an entry in
+<code class="highlighter-rouge">mForceCountDown</code> is greater than zero, then that implies that the user wants
+a force to be applied for that entry.</p>
+
+<p>There are two ways that forces can be applied:</p>
+
+<ul>
+  <li>As an internal joint force</li>
+  <li>As an external body force</li>
+</ul>
+
+<p>First we’ll consider applying a Joint force. Inside the for-loop that goes
+through each <code class="highlighter-rouge">DegreeOfFreedom</code> using <code class="highlighter-rouge">getNumDofs()</code>, there is an 
+if-statement for <code class="highlighter-rouge">mForceCountDown</code>. In that if-statement, we’ll grab the
+relevant DegreeOfFreedom and set its generalized (joint) force:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">DegreeOfFreedom</span><span class="o">*</span> <span class="n">dof</span> <span class="o">=</span> <span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getDof</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="n">dof</span><span class="o">-&gt;</span><span class="n">setForce</span><span class="p">(</span> <span class="n">mPositiveSign</span><span class="o">?</span> <span class="n">default_torque</span> <span class="o">:</span> <span class="o">-</span><span class="n">default_torque</span> <span class="p">);</span>
+</code></pre>
+</div>
+
+<p>The <code class="highlighter-rouge">mPositiveSign</code> boolean gets toggled when the user presses the minus sign
+‘-‘ key. We use this boolean to decide whether the applied force should be
+positive or negative.</p>
+
+<p>Now we’ll want to visualize the fact that a Joint force is being applied. We’ll
+do this by highlighting the joint with the color red. First we’ll grab the Shape
+that corresponds to this Joint:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">BodyNode</span><span class="o">*</span> <span class="n">bn</span> <span class="o">=</span> <span class="n">dof</span><span class="o">-&gt;</span><span class="n">getChildBodyNode</span><span class="p">();</span>
+<span class="k">const</span> <span class="n">ShapePtr</span><span class="o">&amp;</span> <span class="n">shape</span> <span class="o">=</span> <span class="n">bn</span><span class="o">-&gt;</span><span class="n">getVisualizationShape</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>Because of the way the pendulum bodies were constructed, we trust that the
+zeroth indexed visualization shape will be the shape that depicts the joint.
+So now we will color it red:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">shape</span><span class="o">-&gt;</span><span class="n">setColor</span><span class="p">(</span><span class="n">dart</span><span class="o">::</span><span class="n">Color</span><span class="o">::</span><span class="n">Red</span><span class="p">());</span>
+</code></pre>
+</div>
+
+<h3 id="lesson-1c-apply-body-forces-based-on-user-input">Lesson 1c: Apply body forces based on user input</h3>
+
+<p>If mBodyForce is true, we’ll want to apply an external force to the body instead
+of an internal force in the joint. First, inside the for-loop that iterates
+through each <code class="highlighter-rouge">BodyNode</code> using <code class="highlighter-rouge">getNumBodyNodes()</code>, there is an if-statement
+for <code class="highlighter-rouge">mForceCountDown</code>. In that if-statement, we’ll grab the relevant BodyNode:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">BodyNode</span><span class="o">*</span> <span class="n">bn</span> <span class="o">=</span> <span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getBodyNode</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>Now we’ll create an <code class="highlighter-rouge">Eigen::Vector3d</code> that describes the force and another one
+that describes the location for that force. An <code class="highlighter-rouge">Eigen::Vector3d</code> is the Eigen
+C++ library’s version of a three-dimensional mathematical vector. Note that the
+<code class="highlighter-rouge">d</code> at the end of the name stands for <code class="highlighter-rouge">double</code>, not for “dimension”. An
+Eigen::Vector3f would be a three-dimensional vector of floats, and an
+Eigen::Vector3i would be a three-dimensional vector of integers.</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3d</span> <span class="n">force</span> <span class="o">=</span> <span class="n">default_force</span> <span class="o">*</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3d</span><span class="o">::</span><span class="n">UnitX</span><span class="p">();</span>
+<span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3d</span> <span class="n">location</span><span class="p">(</span><span class="o">-</span><span class="n">default_width</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">default_height</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>The force will have a magnitude of <code class="highlighter-rouge">default_force</code> and it will point in the
+positive x-direction. The location of the force will be in the center of the
+negative x side of the body, as if a finger on the negative side is pushing the
+body in the positive direction. However, we need to account for sign changes:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">mPositiveSign</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">force</span> <span class="o">=</span> <span class="o">-</span><span class="n">force</span><span class="p">;</span>
+  <span class="n">location</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">location</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>That will flip the signs whenever the user is requesting a negative force.</p>
+
+<p>Now we can add the external force:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">bn</span><span class="o">-&gt;</span><span class="n">addExtForce</span><span class="p">(</span><span class="n">force</span><span class="p">,</span> <span class="n">location</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>The two <code class="highlighter-rouge">true</code> booleans at the end are indicating to DART that both the force
+and the location vectors are being expressed with respect to the body frame.</p>
+
+<p>Now we’ll want to visualize the force being applied to the body. First, we’ll
+grab the Shape for the body and color it red:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">const</span> <span class="n">ShapePtr</span><span class="o">&amp;</span> <span class="n">shape</span> <span class="o">=</span> <span class="n">bn</span><span class="o">-&gt;</span><span class="n">getVisualizationShape</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">shape</span><span class="o">-&gt;</span><span class="n">setColor</span><span class="p">(</span><span class="n">dart</span><span class="o">::</span><span class="n">Color</span><span class="o">::</span><span class="n">Red</span><span class="p">());</span>
+</code></pre>
+</div>
+
+<p>Last time we grabbed the 0-index visualization shape, because we trusted that
+it was the shape that represented the parent Joint. This time we’re grabbing
+the 1-index visualization shape, because we trust that it is the shape for the
+body.</p>
+
+<p>Now we’ll want to add an arrow to the visualization shapes of the body to
+represent the applied force. The <code class="highlighter-rouge">MyWindow</code> class already provides the arrow
+shape; we just need to add it:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">bn</span><span class="o">-&gt;</span><span class="n">addVisualizationShape</span><span class="p">(</span><span class="n">mArrow</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<h2 id="lesson-2-set-spring-and-damping-properties-for-joints">Lesson 2: Set spring and damping properties for joints</h2>
+
+<p>DART allows Joints to have implicit spring and damping properties. By default,
+these properties are zeroed out, so a joint will only exhibit the forces that
+are given to it by the <code class="highlighter-rouge">Joint::setForces</code> function. However, you can give a
+non-zero spring coefficient to a joint so that it behaves according to Hooke’s
+Law, and you can give a non-zero damping coefficient to a joint which will
+result in linear damping. These forces are computed using implicit methods in
+order to improve numerical stability.</p>
+
+<h3 id="lesson-2a-set-joint-spring-rest-position">Lesson 2a: Set joint spring rest position</h3>
+
+<p>First let’s see how to get and set the rest positions.</p>
+
+<p>Find the function named <code class="highlighter-rouge">changeRestPosition</code> in the <code class="highlighter-rouge">MyWindow</code> class. This
+function will be called whenever the user presses the ‘q’ or ‘a’ button. We want
+those buttons to curl and uncurl the rest positions for the pendulum. To start,
+we’ll go through all the generalized coordinates and change their rest positions
+by <code class="highlighter-rouge">delta</code>:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">for</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getNumDofs</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">DegreeOfFreedom</span><span class="o">*</span> <span class="n">dof</span> <span class="o">=</span> <span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getDof</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+  <span class="kt">double</span> <span class="n">q0</span> <span class="o">=</span> <span class="n">dof</span><span class="o">-&gt;</span><span class="n">getRestPosition</span><span class="p">()</span> <span class="o">+</span> <span class="n">delta</span><span class="p">;</span>
+
+  <span class="n">dof</span><span class="o">-&gt;</span><span class="n">setRestPosition</span><span class="p">(</span><span class="n">q0</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>However, it’s important to note that the system can become somewhat unstable if
+we allow it to curl up too much, so let’s put a limit on the magnitude of the
+rest angle. Right before <code class="highlighter-rouge">dof-&gt;setRestPosition(q0);</code> we can put:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">q0</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">90.0</span> <span class="o">*</span> <span class="n">M_PI</span> <span class="o">/</span> <span class="mf">180.0</span><span class="p">)</span>
+  <span class="n">q0</span> <span class="o">=</span> <span class="p">(</span><span class="n">q0</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span><span class="o">?</span> <span class="p">(</span><span class="mf">90.0</span> <span class="o">*</span> <span class="n">M_PI</span> <span class="o">/</span> <span class="mf">180.0</span><span class="p">)</span> <span class="o">:</span> <span class="o">-</span><span class="p">(</span><span class="mf">90.0</span> <span class="o">*</span> <span class="n">M_PI</span> <span class="o">/</span> <span class="mf">180.0</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>And there’s one last thing to consider: the first joint of the pendulum is a
+BallJoint. BallJoints have three degrees of freedom, which means if we alter
+the rest positions of <em>all</em> of the pendulum’s degrees of freedom, then the
+pendulum will end up curling out of the x-z plane. You can allow this to happen
+if you want, or you can prevent it from happening by zeroing out the rest
+positions of the BallJoint’s other two degrees of freedom:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getDof</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">setRestPosition</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span>
+<span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getDof</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">setRestPosition</span><span class="p">(</span><span class="mf">0.0</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<h3 id="lesson-2b-set-joint-spring-stiffness">Lesson 2b: Set joint spring stiffness</h3>
+
+<p>Changing the rest position does not accomplish anything without having any
+spring stiffness. We can change the spring stiffness as follows:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">for</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getNumDofs</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">DegreeOfFreedom</span><span class="o">*</span> <span class="n">dof</span> <span class="o">=</span> <span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getDof</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+  <span class="kt">double</span> <span class="n">stiffness</span> <span class="o">=</span> <span class="n">dof</span><span class="o">-&gt;</span><span class="n">getSpringStiffness</span><span class="p">()</span> <span class="o">+</span> <span class="n">delta</span><span class="p">;</span>
+  <span class="n">dof</span><span class="o">-&gt;</span><span class="n">setSpringStiffness</span><span class="p">(</span><span class="n">stiffness</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>However, it’s important to realize that if the spring stiffness were ever to
+become negative, we would get some very nasty explosive behavior. It’s also a
+bad idea to just trust the user to avoid decrementing it into being negative.
+So before the line <code class="highlighter-rouge">dof-&gt;setSpringStiffness(stiffness);</code> you’ll want to put:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">stiffness</span> <span class="o">&lt;</span> <span class="mf">0.0</span><span class="p">)</span>
+  <span class="n">stiffness</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<h3 id="lesson-2c-set-joint-damping">Lesson 2c: Set joint damping</h3>
+
+<p>Joint damping can be thought of as friction inside the joint actuator. It
+applies a resistive force to the joint which is proportional to the generalized
+velocities of the joint. This draws energy out of the system and generally
+results in more stable behavior.</p>
+
+<p>The API for getting and setting the damping is just like the API for stiffness:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">for</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getNumDofs</span><span class="p">();</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">DegreeOfFreedom</span><span class="o">*</span> <span class="n">dof</span> <span class="o">=</span> <span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getDof</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+  <span class="kt">double</span> <span class="n">damping</span> <span class="o">=</span> <span class="n">dof</span><span class="o">-&gt;</span><span class="n">getDampingCoefficient</span><span class="p">()</span> <span class="o">+</span> <span class="n">delta</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">damping</span> <span class="o">&lt;</span> <span class="mf">0.0</span><span class="p">)</span>
+    <span class="n">damping</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
+  <span class="n">dof</span><span class="o">-&gt;</span><span class="n">setDampingCoefficient</span><span class="p">(</span><span class="n">damping</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Again, we want to make sure that the damping coefficient is never negative. In
+fact, a negative damping coefficient would be far more harmful than a negative
+stiffness coefficient.</p>
+
+<h2 id="lesson-3-add-and-remove-dynamic-constraints">Lesson 3: Add and remove dynamic constraints</h2>
+
+<p>Dynamic constraints in DART allow you to attach two BodyNodes together according
+to a selection of a few different Joint-style constraints. This allows you to
+create closed loop constraints, which is not possible using standard Joints.
+You can also create a dynamic constraint that attaches a BodyNode to the World
+instead of to another BodyNode.</p>
+
+<p>In our case, we want to attach the last BodyNode to the World with a BallJoint
+style constraint whenever the function <code class="highlighter-rouge">addConstraint()</code> gets called. First,
+let’s grab the last BodyNode in the pendulum:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">BodyNode</span><span class="o">*</span> <span class="n">tip</span>  <span class="o">=</span> <span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getBodyNode</span><span class="p">(</span><span class="n">mPendulum</span><span class="o">-&gt;</span><span class="n">getNumBodyNodes</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>Now we’ll want to compute the location that the constraint should have. We want
+to connect the very end of the tip to the world, so the location would be:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3d</span> <span class="n">location</span> <span class="o">=</span>
+    <span class="n">tip</span><span class="o">-&gt;</span><span class="n">getTransform</span><span class="p">()</span> <span class="o">*</span> <span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3d</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">default_height</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>Now we can create the BallJointConstraint:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">mBallConstraint</span> <span class="o">=</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">dart</span><span class="o">::</span><span class="n">constraint</span><span class="o">::</span><span class="n">BallJointConstraint</span><span class="o">&gt;</span><span class="p">(</span><span class="n">tip</span><span class="p">,</span> <span class="n">location</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>And then add it to the world:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">mWorld</span><span class="o">-&gt;</span><span class="n">getConstraintSolver</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">addConstraint</span><span class="p">(</span><span class="n">mBallConstraint</span><span class="p">);</span>
+</code></pre>
+</div>
+
+<p>Now we also want to be able to remove this constraint. In the function
+<code class="highlighter-rouge">removeConstraint()</code>, we can put the following code:</p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="n">mWorld</span><span class="o">-&gt;</span><span class="n">getConstraintSolver</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">removeConstraint</span><span class="p">(</span><span class="n">mBallConstraint</span><span class="p">);</span>
+<span class="n">mBallConstraint</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
+</code></pre>
+</div>
+
+<p>Setting mBallConstraint to a nullptr will allow its smart pointer to delete it.</p>
+
+<p><strong>Now you are ready to run the demo!</strong></p>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="http://dart.readthedocs.org/en/release-5.1/tutorials/multi-pendulum/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'dartsim';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2016 Georgia Tech and Carnegie Mellon University. All rights reserved. <br />
+ Site last generated: Oct 6, 2016 <br />
+<p><img src="images/dart_logo_big.jpg" alt="DART logo" style="width:128px"/></p>
+                </div>
+            </div>
+</footer>
+
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: DART
+  version: 6.1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: /index.html
+      output: web, pdf
+
+    - title: Project Status
+      url: /mydoc_project_status.html
+      output: web, pdf
+
+    - title: Roadmap and Release Schedule
+      external_url: https://github.com/dartsim/dart/milestones
+      output: web, pdf
+
+    - title: Changelog
+      external_url: https://github.com/dartsim/dart/blob/master/CHANGELOG.md
+      output: web, pdf
+
+    - title: History
+      url: /mydoc_history.html
+      output: web, pdf
+
+    - title: Constributors
+      external_url: https://github.com/dartsim/dart/blob/master/CONTRIBUTING.md#dart-contributors
+      output: web, pdf
+
+    - title: License
+      url: /mydoc_license.html
+      output: web, pdf
+
+  - title: Download
+    output: web, pdf
+    folderitems:
+
+    - title: Download
+      url: /mydoc_download.html
+      output: web, pdf
+
+  - title: Installation
+    output: web, pdf
+    folderitems:
+
+    - title: Install DART on Ubuntu
+      url: /mydoc_install_dart_on_ubuntu.html
+      output: web, pdf
+
+    - title: Install DART on Mac
+      url: /mydoc_install_dart_on_mac.html
+      output: web, pdf
+
+    - title: Install DART on Windows
+      url: /mydoc_install_dart_on_windows.html
+      output: web, pdf
+
+  - title: Documentation
+    output: web, pdf
+    folderitems:
+
+    - title: API Documentation
+      external_url: http://dartsim.github.io/dart/
+      output: web, pdf
+
+    - title: FAQ
+      url: /mydoc_faq.html
+      output: web, pdf
+
+    - title: SKEL File Format Specification
+      url: /mydoc_skel_file_format.html
+      output: web, pdf
+
+  - title: Gallery
+    output: web, pdf
+    folderitems:
+
+    - title: Gallery
+      url: /mydoc_gallery.html
+      output: web, pdf
+
+    - title: Use Cases
+      url: /mydoc_use_cases.html
+      output: web, pdf
+

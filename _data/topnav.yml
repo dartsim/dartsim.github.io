@@ -1,0 +1,19 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+
+topnav:
+- title: Topnav
+  items:
+    - title: Tutorials
+      url: /tutorials_introduction.html
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav
+  folders:
+    - title: Github
+      folderitems:
+        - title: View Project on Github
+          external_url: http://github.com/dartsim/dart
+        - title: Report Issue
+          external_url: https://github.com/dartsim/dart/issues
