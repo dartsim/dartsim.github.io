@@ -117,6 +117,8 @@ sudo apt-get install libbullet-dev
 
 * OpenSceneGraph GUI
 
+  {% include note.html content="If you're going to build OpenSceneGraph based examples, then please install OpenSceneGraph." %}
+
   ```
   sudo apt-get install libopenscenegraph-dev
   ```

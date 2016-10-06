@@ -136,6 +136,7 @@ brew install boost
   ```
 
 * OpenSceneGraph GUI
+  {% include note.html content="If you're going to build OpenSceneGraph based examples, then please install OpenSceneGraph." %}
   ```
   brew install open-scene-graph
   ```
