@@ -21,5 +21,7 @@ topnav_dropdowns:
           external_url: http://github.com/dartsim/dart
         - title: Report DART Issue
           external_url: https://github.com/dartsim/dart/issues
-        - title: View Website on Github
+        - title: View DART Website on Github
           external_url: https://github.com/dartsim/dartsim.github.io
+        - title: Report DART Website Issue
+          external_url: https://github.com/dartsim/dartsim.github.io/issues
