@@ -51,6 +51,22 @@ entries:
       url: /mydoc_license.html
       output: web, pdf
 
+  - title: Gallery
+    output: web, pdf
+    folderitems:
+
+    - title: Gallery
+      url: /mydoc_gallery.html
+      output: web, pdf
+
+    - title: Use Cases
+      url: /mydoc_use_cases.html
+      output: web, pdf
+
+    - title: YouTube Channel
+      external_url: https://www.youtube.com/channel/UC_YYNVv9bdEolIpkai10_Lg
+      output: web, pdf
+
   - title: Download
     output: web, pdf
     folderitems:
@@ -90,22 +106,4 @@ entries:
     - title: SKEL File Format Specification
       url: /mydoc_skel_file_format.html
       output: web, pdf
-
-  - title: Gallery
-    output: web, pdf
-    folderitems:
-
-    - title: Gallery
-      url: /mydoc_gallery.html
-      output: web, pdf
-
-    - title: Use Cases
-      url: /mydoc_use_cases.html
-      output: web, pdf
-
-    - title: YouTube Channel
-      external_url: https://www.youtube.com/channel/UC_YYNVv9bdEolIpkai10_Lg
-      output: web, pdf
-
-
 
