@@ -11,11 +11,15 @@ folder: mydoc
 
 ### Atlas Simbicon
 
-{% include image.html file="example_osg_atlas.png" alt="OSG-based Example: Atlas" max-width="480"  caption="Atlas Simbicon" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ve_MRMTvGX8" frameborder="0" allowfullscreen></iframe>
+
+* [Source code](https://github.com/dartsim/dart/tree/oss_challenge/examples/osg/osgAtlasSimbicon)
 
 ### Tinkertoy
 
-{% include image.html file="example_osg_inkertoy.png" alt="OSG-based Example: Tinkertoy" max-width="480"  caption="Tinkertoy" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FiKtZWShv2M" frameborder="0" allowfullscreen></iframe>
+
+* [Source code](https://github.com/dartsim/dart/tree/oss_challenge/examples/osg/osgTinkertoy)
 
 ## OpenGL Based Examples
 
