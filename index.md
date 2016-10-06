@@ -5,7 +5,7 @@ permalink: index.html
 toc: false
 ---
 
-{% include image.html file="dart_logo_big.jpg" url="https://jslee02.github.io/test-webpage2" alt="DART Logo" max-width="480"  caption="" %}
+{% include image.html file="dart_logo_big.jpg" alt="DART Logo" max-width="480"  caption="" %}
 
 
 ## Introduction
