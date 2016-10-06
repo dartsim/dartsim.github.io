@@ -37,6 +37,6 @@ This is a curated list of releases. Visit [here](https://github.com/dartsim/dart
 
 | Version | Date       | zip | tar.gz |
 | ------- | ---------- | --- | ------ |
-| 5.1.1   | 2015-11-06 | [down](https://github.com/dartsim/dart/archive/v5.1.1.zip) | [down](https://github.com/dartsim/dart/archive/v5.1.1.tar.gz) |
-| 4.3.5   | 2016-01-09 | [down](https://github.com/dartsim/dart/archive/v4.3.5.zip) | [down](https://github.com/dartsim/dart/archive/v4.3.5.tar.gz) |
+| 5.1.1   | 2015-11-06 | <a href="https://github.com/dartsim/dart/archive/v5.1.1.zip"><i class="fa fa-download fa-lg"></i></a> | <a href="https://github.com/dartsim/dart/archive/v5.1.1.tar.gz"><i class="fa fa-download fa-lg"></i></a> |
+| 4.3.5   | 2016-01-09 | <a href="https://github.com/dartsim/dart/archive/v4.3.5.zip"><i class="fa fa-download fa-lg"></i></a> | <a href="https://github.com/dartsim/dart/archive/v4.3.5.tar.gz"><i class="fa fa-download fa-lg"></i></a> |
 
