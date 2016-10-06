@@ -103,3 +103,9 @@ entries:
       url: /mydoc_use_cases.html
       output: web, pdf
 
+    - title: YouTube Channel
+      external_url: https://www.youtube.com/channel/UC_YYNVv9bdEolIpkai10_Lg
+      output: web, pdf
+
+
+
