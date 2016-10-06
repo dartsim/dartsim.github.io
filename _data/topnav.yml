@@ -4,6 +4,10 @@
 topnav:
 - title: Topnav
   items:
+    - title: News
+      url: /news
+- title: Topnav
+  items:
     - title: Tutorials
       url: /tutorials_introduction.html
 
