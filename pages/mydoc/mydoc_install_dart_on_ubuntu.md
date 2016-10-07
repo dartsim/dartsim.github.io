@@ -1,6 +1,7 @@
 ---
 title: Install DART on Ubuntu
 keywords: install, ubuntu
+last_updated: Oct 7, 2016
 sidebar: mydoc_sidebar
 permalink: mydoc_install_dart_on_ubuntu.html
 folder: mydoc
@@ -10,7 +11,7 @@ folder: mydoc
 
 ### Supported Platforms
 
-We support Ubuntu 32 and 64 bit **14.04 LTS (trusty)**, **15.10 (wily)**, and **16.04 (xenial)** systems.
+We support Ubuntu 32 and 64 bit **14.04 LTS (trusty)** and **16.04 (xenial)** systems.
 
 
 ## Install DART using Ubuntu packages
@@ -19,7 +20,7 @@ If you want to use dart as a dependent library for your development, then instal
 
 ### Adding [Personal Package Archives (PPA's) for DART and dependencies](https://launchpad.net/~dartsim/+archive/ubuntu/ppa)
 
-DART 6 Debian packages are provided for 14.04 LTS (trusty), 15.10 (wily), and 16.04 (xenial).
+DART 6.1 Debian packages are provided for 14.04 LTS (trusty) and 16.04 (xenial).
 
 * trusty
 
@@ -30,7 +31,7 @@ DART 6 Debian packages are provided for 14.04 LTS (trusty), 15.10 (wily), and 16
   sudo apt-get update
   ```
 
-* wily and xenial (and later)
+* xenial
 
   ```
   sudo apt-add-repository ppa:dartsim
@@ -134,11 +135,11 @@ sudo apt-get install libbullet-dev
     git clone git://github.com/dartsim/dart.git
     ```
 
-1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.0.1`:
+1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.1.0`:
 
     ```
     cd dart
-    git checkout tags/v6.0.1
+    git checkout tags/v6.1.0
     ```
 
 1.  Create a build directory:

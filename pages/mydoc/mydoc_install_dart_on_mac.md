@@ -1,6 +1,7 @@
 ---
 title: Install DART on Mac
 keywords: install, mac
+last_updated: Oct 7, 2016
 sidebar: mydoc_sidebar
 permalink: mydoc_install_dart_on_mac.html
 folder: mydoc
@@ -10,7 +11,7 @@ folder: mydoc
 
 ### Supported Platforms
 
-DART 6.0 has been tested to run on OS X Mavericks (10.9) with [clang](http://clang.llvm.org/) (Apple LLVM version 6.0).
+DART 6.1 has been tested to run on OS X Mavericks (10.9) with [clang](http://clang.llvm.org/) (Apple LLVM version 6.0).
 
 ### Getting headers/developer tools
 
@@ -154,11 +155,11 @@ After this you should be able to clone the DART repository and compile it.
     git clone git://github.com/dartsim/dart.git
     ```
 
-1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.0.1`:
+1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.1.0`:
 
     ```
     cd dart
-    git checkout tags/v6.0.1
+    git checkout tags/v6.1.0
     ```
 
 1.  Create a build directory:
