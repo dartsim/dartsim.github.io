@@ -1,5 +1,6 @@
 ---
 title: Download
+last_updated: Oct 7, 2016
 sidebar: mydoc_sidebar
 permalink: mydoc_download.html
 folder: mydoc
