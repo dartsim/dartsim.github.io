@@ -17,13 +17,20 @@ toc: false
 
 ## Academic Research
 
+This is a curated list of publications that used DART.
+
 | Thumbnail | Papers |
 |-----------|--------|
-| <img src="http://www.cc.gatech.edu/~karenliu/Home_files/droppedImage.jpg"/>  | [Multiple Contact Planning for Minimizing Damage of Humanoid Falls](http://www.cc.gatech.edu/~sha9/projects/ha2015mcs/index.html), Sehoon Ha and C. Karen Liu, in IEEE/RSJ International Conference on Intelligent Robots and Systems, 2015 |
-| <img src="http://www.cc.gatech.edu/~karenliu/Home_files/droppedImage_4.jpg"/>  | [Coupling Cloth and Rigid Bodies for Dexterous Manipulation](http://www.cc.gatech.edu/~ybai30/cloth/paper_cloth.pdf), Yunfei Bai and C. Karen Liu, in Motion in Games, 2014 (Best Student Paper Award) |
-| <img src="http://www.cc.gatech.edu/~karenliu/Home_files/droppedImage.png"/>  | [Orienting in Mid-air through Configuration Changes to Achieve a Rolling Landing for Reducing Impact after a Fall](http://www.cc.gatech.edu/~karenliu/bingham_inertiabot_IROS2014.pdf), Jeffrey T. Bingham, Jeongseok Lee, Ravi N. Haksar, Jun Ueda, and C. Karen Liu, in IEEE/RSJ International Conference on Intelligent Robots and Systems, 2014 |
-| <img src="http://www.cc.gatech.edu/~karenliu/Home_files/droppedImage_7.jpg"/> | [Dexterous Manipulation Using Both Palm and Fingers](http://www.cc.gatech.edu/~ybai30/hand/hand.html), Yunfei Bai and C. Karen Liu, in IEEE International Conference on Robotics and Automation, 2014 |
-| <img src="http://www.cc.gatech.edu/~karenliu/Home_files/droppedImage_11.jpg"/> | [Synthesis of Concurrent Object Manipulation Tasks](http://www.cc.gatech.edu/~ybai30/multitask/multitask.html), Yunfei Bai, Kristin Siu and C. Karen Liu, in ACM Transactions on Graphics (presented at SIGGRAPH Asia), 2012 |
+| <img src="https://dartsim.github.io/images/use_cases/2016_traversing.jpg"/> | Traversing Environments Using Possibility Graphs for Humanoid Robots, Michael X. Grey, Aaron D. Ames, and C. Karen Liu , Preprint, 2016 [arXiv](https://arxiv.org/abs/1608.03845) |
+| <img src="https://dartsim.github.io/images/use_cases/2016_a_linear.jpg"/> | A Linear-Time Variational Integrator for Multibody Systems, Jeongseok Lee, C. Karen Liu, Frank C. Park, and Siddhartha S. Srinivasa, Preprint, 2016 [arXiv](https://arxiv.org/abs/1609.02898) |
+| <img src="https://dartsim.github.io/images/use_cases/2016_humanoid.jpg"/> | Humanoid Manipulation Planning using Backward-Forward Search, Michael X. Grey, Caelan R. Garrett, C. Karen Liu, Aaron D. Ames, and Andrea L. Thomaz, in IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2016 [PDF](http://www.cc.gatech.edu/graphics/projects/Grey/humanoid_hbf_iros2016.pdf) [Video](http://www.cc.gatech.edu/graphics/projects/Grey/iros2016_humanoid_hbf.mp4) |
+| <img src="https://dartsim.github.io/images/use_cases/2016_evolutionary.jpg"/> | Evolutionary Optimization for Parameterized Whole-body Dynamic Motor Skills, Sehoon Ha and C. Karen Liu, in IEEE International Conference on Robotics and Automation (ICRA) 2016 [PDF](http://sehoonha.com/projects/ha2016eop/2016_optskill.pdf) [Video](https://youtu.be/vomyRgVj21w) |
+| <img src="https://dartsim.github.io/images/use_cases/2016_dexterous.jpg"/> | Dexterous Manipulation of Cloth, Yunfei Bai, Wenhao Yu (co-first author), and C. Karen Liu, in Computer Graphics Forum (Eurographics), 2016 [PDF](http://www.cc.gatech.edu/~ybai30/cloth_manipulation/paper_cloth_manipulation.pdf) [Video](https://youtu.be/_H_PlIvL3-k) |
+| <img src="https://dartsim.github.io/images/use_cases/2015_multiple.jpg"/>  | [Multiple Contact Planning for Minimizing Damage of Humanoid Falls](http://www.cc.gatech.edu/~sha9/projects/ha2015mcs/index.html), Sehoon Ha and C. Karen Liu, in IEEE/RSJ International Conference on Intelligent Robots and Systems, 2015 |
+| <img src="https://dartsim.github.io/images/use_cases/2014_coupling.jpg"/>  | [Coupling Cloth and Rigid Bodies for Dexterous Manipulation](http://www.cc.gatech.edu/~ybai30/cloth/paper_cloth.pdf), Yunfei Bai and C. Karen Liu, in Motion in Games, 2014 (Best Student Paper Award) |
+| <img src="https://dartsim.github.io/images/use_cases/2014_orienting.png"/>  | [Orienting in Mid-air through Configuration Changes to Achieve a Rolling Landing for Reducing Impact after a Fall](http://www.cc.gatech.edu/~karenliu/bingham_inertiabot_IROS2014.pdf), Jeffrey T. Bingham, Jeongseok Lee, Ravi N. Haksar, Jun Ueda, and C. Karen Liu, in IEEE/RSJ International Conference on Intelligent Robots and Systems, 2014 |
+| <img src="https://dartsim.github.io/images/use_cases/2014_dexterous.jpg"/> | [Dexterous Manipulation Using Both Palm and Fingers](http://www.cc.gatech.edu/~ybai30/hand/hand.html), Yunfei Bai and C. Karen Liu, in IEEE International Conference on Robotics and Automation, 2014 |
+| <img src="https://dartsim.github.io/images/use_cases/2012_synthesis.jpg"/> | [Synthesis of Concurrent Object Manipulation Tasks](http://www.cc.gatech.edu/~ybai30/multitask/multitask.html), Yunfei Bai, Kristin Siu and C. Karen Liu, in ACM Transactions on Graphics (presented at SIGGRAPH Asia), 2012 |
 
 
 
