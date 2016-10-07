@@ -74,7 +74,10 @@ Install required dependencies. A clean Ubuntu system will need:
 ```
 sudo apt-get install build-essential cmake pkg-config git
 sudo apt-get install libeigen3-dev libassimp-dev libccd-dev libfcl-dev libboost-regex-dev libboost-system-dev
+sudo apt-get install libopenscenegraph-dev
 ```
+
+{% include note.html content="`libopenscenegraph-dev` is not an actual required dependency for building the core component of DART, but it's necessary to build [OpenSceneGraph based examples](http://dartsim.github.io/mydoc_gallery.html#openscenegraph-based-examples)." %}
 
 ### Install Optional Dependencies
 
