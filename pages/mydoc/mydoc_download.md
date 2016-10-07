@@ -6,15 +6,12 @@ folder: mydoc
 toc: false
 ---
 
-## Latest version: 6.0.1 (2016-07-06)
+## Latest Stable Version: 6.0.1 (2016-07-06)
 
-### Direct Link
+### Direct Download
 
 <a href="https://github.com/dartsim/dart/archive/v6.0.1.zip" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> v6.0.1-zip</a>
 <a href="https://github.com/dartsim/dart/archive/v6.0.1.tar.gz" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> v6.0.1-tar.gz</a>
-
-<a href="https://github.com/dartsim/dart/zipball/master" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> master-zip</a>
-<a href="https://github.com/dartsim/dart/tarball/master" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> master-tar.gz</a>
 
 ### GitHub
 
@@ -30,6 +27,11 @@ Change directory to the local DART repository and checkout the tag you want (e.g
 cd dart
 git checkout tags/v6.0.1
 ```
+
+## Master Version
+
+<a href="https://github.com/dartsim/dart/zipball/master" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> master-zip</a>
+<a href="https://github.com/dartsim/dart/tarball/master" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> master-tar.gz</a>
 
 ## Past Releases
 
