@@ -8,7 +8,7 @@ toc: false
 
 ## Latest Stable Version: 6.0.1 (2016-07-06)
 
-### Direct Download
+### Direct Link
 
 <a href="https://github.com/dartsim/dart/archive/v6.0.1.zip" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> v6.0.1-zip</a>
 <a href="https://github.com/dartsim/dart/archive/v6.0.1.tar.gz" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> v6.0.1-tar.gz</a>
@@ -28,7 +28,9 @@ cd dart
 git checkout tags/v6.0.1
 ```
 
-## Master Version
+## Master Branch
+
+{% include warning.html content="`master` is a bleeding edge branch. You can use `master` at your own risk to check out new features and improvements in advance, and get quick fixes." %}
 
 <a href="https://github.com/dartsim/dart/zipball/master" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> master-zip</a>
 <a href="https://github.com/dartsim/dart/tarball/master" class="btn btn-default githubEditButton" role="button"><i class="fa fa-download fa-lg"></i> master-tar.gz</a>
