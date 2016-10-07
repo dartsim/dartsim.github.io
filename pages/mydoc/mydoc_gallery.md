@@ -13,13 +13,27 @@ folder: mydoc
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ve_MRMTvGX8" frameborder="0" allowfullscreen></iframe>
 
-* [Source code](https://github.com/dartsim/dart/tree/oss_challenge/examples/osg/osgAtlasSimbicon)
+* [Source code](https://github.com/dartsim/dart/tree/release-6.1/examples/osg/osgAtlasSimbicon)
 
 ### Tinkertoy
 
+The *tinkertoy* demo simulates trees of *tinkertoys*, which are blocks connected to each other via various joint types. This is a fully 3D simulation with articulated dynamics and rigid body collisions. This demo uses OpenSceneGraph for 3D rendering and ImGui for 2D on-screen buttons. The source code can be found in the [examples/osg/osgTinkertoy](https://github.com/dartsim/dart/tree/release-6.1/examples/osg/osgTinkertoy) directory.
+
+The scene starts out with two trees of *tinkertoys*. Left-click on one of the blocks to attach a target to it. During simulation, the block that is attached to the target will be pulled towards the target with a spring-like force. Move the target around by clicking on its handles to change the direction of the force.
+
+When simulation is paused, the user can change the structure of the tinkertoy by adding and removing blocks. Click on:
+
+- <span class="label label-default">Add a Weld-Joint Block</span>
+- <span class="label label-default">Add a Revolute-Joint Block</span>
+- <span class="label label-default">Add a Ball-Joint Block</span>
+
+to add a block with the specified joint type at the current target location. The new block will be attached to whichever block the target is currently attached to. You can use the <span class="label label-default">Reset Target</span> button to detach the target from all blocks, allowing you to construct a new tinkertoy tree. The new block will run along the x-axis (red arrow) of the target. For revolute joints, the joint axis will align with the target's z-axis (blue arrow).
+
+Gravity can be toggled from the 2D GUI or by pressing the `G` key.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FiKtZWShv2M" frameborder="0" allowfullscreen></iframe>
 
-* [Source code](https://github.com/dartsim/dart/tree/oss_challenge/examples/osg/osgTinkertoy)
+* [Source code](https://github.com/dartsim/dart/tree/release-6.1/examples/osg/osgTinkertoy)
 
 ## Examples on [Gazebo](http://www.gazebosim.org/)
 
