@@ -13,7 +13,17 @@ folder: mydoc
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ve_MRMTvGX8" frameborder="0" allowfullscreen></iframe>
 
-* [Source code](https://github.com/dartsim/dart/tree/release-6.1/examples/osg/osgAtlasSimbicon)
+The *Atlas Simbicon* demo simulates [Atlas](http://www.bostondynamics.com/robot_Atlas.html) humanoid robot controlled by [Simbicon](http://www.cs.ubc.ca/~van/papers/Simbicon.htm), which is a simple biped locomotion controller. This demo is a fully 3D simulation with articulated dynamics and rigid body collisions. This demo uses OpenSceneGraph for 3D rendering and ImGui for 2D on-screen buttons. The source code can be found in the [examples/osg/osgAtlasSimbicon](https://github.com/dartsim/dart/tree/release-6.1/examples/osg/osgAtlasSimbicon) directory.
+
+The controller has three control modes: 'No Control', 'Short-Stride Walking', and 'Normal-Stride Walking'. The Atlas robot can walk keeping its balance with disturbances. You can apply external forces to the torso using the keyboard:
+- 'A' Key: push forward the torso of Atlas
+- 'S' Key: push backward the torso of Atlas
+- 'D' Key: push left the torso of Atlas
+- 'F' Key: push right the torso of Atlas
+
+<span class="label label-default">Reset Atlas</span> button is for recovering the robot to the initial location and initial pose, which is useful when it's fallen or bungee-jumped out of the ground.
+
+Gravity can be varied using the slider at the 2D GUI.
 
 ### Tinkertoy
 
@@ -32,8 +42,6 @@ to add a block with the specified joint type at the current target location. The
 Gravity can be toggled from the 2D GUI or by pressing the `G` key.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FiKtZWShv2M" frameborder="0" allowfullscreen></iframe>
-
-* [Source code](https://github.com/dartsim/dart/tree/release-6.1/examples/osg/osgTinkertoy)
 
 ## Examples on [Gazebo](http://www.gazebosim.org/)
 
