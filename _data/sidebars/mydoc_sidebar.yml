@@ -79,15 +79,15 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Install DART on Ubuntu (recommended)
+    - title: On Ubuntu (Recommended)
       url: /mydoc_install_dart_on_ubuntu.html
       output: web, pdf
 
-    - title: Install DART on Mac (recommended)
+    - title: On Mac (Recommended)
       url: /mydoc_install_dart_on_mac.html
       output: web, pdf
 
-    - title: Install DART on Windows
+    - title: On Windows
       url: /mydoc_install_dart_on_windows.html
       output: web, pdf
 
