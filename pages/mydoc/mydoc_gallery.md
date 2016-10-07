@@ -11,8 +11,6 @@ folder: mydoc
 
 ### Atlas Simbicon
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ve_MRMTvGX8" frameborder="0" allowfullscreen></iframe>
-
 The *Atlas Simbicon* demo simulates [Atlas](http://www.bostondynamics.com/robot_Atlas.html) humanoid robot controlled by [Simbicon](http://www.cs.ubc.ca/~van/papers/Simbicon.htm), which is a simple biped locomotion controller. This demo is a fully 3D simulation with articulated dynamics and rigid body collisions. This demo uses OpenSceneGraph for 3D rendering and ImGui for 2D on-screen buttons. The source code can be found in the [examples/osg/osgAtlasSimbicon](https://github.com/dartsim/dart/tree/release-6.1/examples/osg/osgAtlasSimbicon) directory.
 
 The controller has three control modes: 'No Control', 'Short-Stride Walking', and 'Normal-Stride Walking'. The Atlas robot can walk keeping its balance with disturbances. You can apply external forces to the torso using the keyboard:
@@ -24,6 +22,8 @@ The controller has three control modes: 'No Control', 'Short-Stride Walking', an
 <span class="label label-default">Reset Atlas</span> button is for recovering the robot to the initial location and initial pose, which is useful when it's fallen or bungee-jumped out of the ground.
 
 Gravity can be varied using the slider at the 2D GUI.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ve_MRMTvGX8" frameborder="0" allowfullscreen></iframe>
 
 ### Tinkertoy
 
