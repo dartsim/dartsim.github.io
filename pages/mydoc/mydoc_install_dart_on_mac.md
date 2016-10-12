@@ -23,7 +23,7 @@ Xcode is Apple's full-fledged development environment for Mac/iPhone/iPad apps, 
 
 ## Install DART using Homebrew
 
-If you want to use dart as a dependent library for your development, then installing dart using [Homebrew](http://brew.sh/) is the most convenient way.
+If you want to use dart as a dependent library for your development, then installing dart using [Homebrew](http://brew.sh/) is the most convenient way. If you found any difficulties in installing DART using Homebrew, please [open an issue](https://github.com/dartsim/homebrew-dart/issues/new) at our [GitHub repo](https://github.com/dartsim/homebrew-dart) of DART Homebrew formulae.
 
 ### Clean up
 
@@ -54,7 +54,7 @@ You can find the install command in [Homebrew's website](http://brew.sh/). It sh
 
 ### Tabbing Required Tabs
 
-1.  Add [dartsim/dart](https://github.com/dartsim/homebrew-dart) tap so formulae of dart and the dependencies will be found
+1.  Add `[dartsim/dart](https://github.com/dartsim/homebrew-dart)` tap so formulae of DART and the dependencies will be found
 
     ```
     brew tap dartsim/dart
@@ -68,7 +68,7 @@ You can find the install command in [Homebrew's website](http://brew.sh/). It sh
 
 ### Install DART 6
 
-Now you can install dart with the following command:
+Now you can install DART with the following command:
 
 ```
 brew install dartsim6
