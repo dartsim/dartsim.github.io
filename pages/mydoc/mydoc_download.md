@@ -1,6 +1,6 @@
 ---
 title: Download
-last_updated: Oct 7, 2016
+last_updated: Oct 14, 2016
 sidebar: mydoc_sidebar
 permalink: mydoc_download.html
 folder: mydoc
@@ -43,6 +43,6 @@ This is a curated list of releases. Visit [here](https://github.com/dartsim/dart
 | Version | Date       | zip | tar.gz |
 | ------- | ---------- | --- | ------ |
 | 6.0.1   | 2016-07-06 | <a href="https://github.com/dartsim/dart/archive/v6.0.1.zip"><i class="fa fa-download fa-lg"></i></a> | <a href="https://github.com/dartsim/dart/archive/v6.0.1.tar.gz"><i class="fa fa-download fa-lg"></i></a> |
-| 5.1.1   | 2015-11-06 | <a href="https://github.com/dartsim/dart/archive/v5.1.1.zip"><i class="fa fa-download fa-lg"></i></a> | <a href="https://github.com/dartsim/dart/archive/v5.1.1.tar.gz"><i class="fa fa-download fa-lg"></i></a> |
-| 4.3.5   | 2016-01-09 | <a href="https://github.com/dartsim/dart/archive/v4.3.5.zip"><i class="fa fa-download fa-lg"></i></a> | <a href="https://github.com/dartsim/dart/archive/v4.3.5.tar.gz"><i class="fa fa-download fa-lg"></i></a> |
+| 5.1.4   | 2016-10-14 | <a href="https://github.com/dartsim/dart/archive/v5.1.4.zip"><i class="fa fa-download fa-lg"></i></a> | <a href="https://github.com/dartsim/dart/archive/v5.1.4.tar.gz"><i class="fa fa-download fa-lg"></i></a> |
+| 4.3.6   | 2016-04-24 | <a href="https://github.com/dartsim/dart/archive/v4.3.6.zip"><i class="fa fa-download fa-lg"></i></a> | <a href="https://github.com/dartsim/dart/archive/v4.3.6.tar.gz"><i class="fa fa-download fa-lg"></i></a> |
 
