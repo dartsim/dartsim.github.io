@@ -19,7 +19,7 @@ API during simulation. This will show you how to:
 - Alter the implicit spring and damping properties of joints
 - Add/remove dynamic constraints
 
-Please reference the source code in [**tutorialMultiPendulum.cpp**](https://github.com/dartsim/dart/blob/release-6.0/tutorials/tutorialMultiPendulum.cpp) and [**tutorialMultiPendulum-Finished.cpp**](https://github.com/dartsim/dart/blob/release-6.0/tutorials/tutorialMultiPendulum-Finished.cpp).
+Please reference the source code in [**tutorialMultiPendulum.cpp**](https://github.com/dartsim/dart/blob/v6.1.0/tutorials/tutorialMultiPendulum.cpp) and [**tutorialMultiPendulum-Finished.cpp**](https://github.com/dartsim/dart/blob/v6.1.0/tutorials/tutorialMultiPendulum-Finished.cpp).
 
 ## Lesson 0: Simulate a passive multi-pendulum
 
