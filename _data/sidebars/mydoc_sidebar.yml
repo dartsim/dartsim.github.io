@@ -100,7 +100,7 @@ entries:
       output: web, pdf
 
     - title: API Documentation
-      external_url: http://dartsim.github.io/dart/
+      external_url: /mydoc_api.html
       output: web, pdf
 
     - title: FAQ
