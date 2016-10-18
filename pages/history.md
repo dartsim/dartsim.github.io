@@ -2,9 +2,8 @@
 title: DART History
 keywords: 
 tags: [getting_started]
-sidebar: mydoc_sidebar
-permalink: mydoc_history.html
-folder: mydoc
+sidebar: home_sidebar
+permalink: history.html
 toc: false
 ---
 

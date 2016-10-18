@@ -1,8 +1,8 @@
 ---
 title: Download
 last_updated: Oct 14, 2016
-sidebar: mydoc_sidebar
-permalink: mydoc_download.html
+sidebar: home_sidebar
+permalink: download.html
 folder: mydoc
 toc: false
 ---

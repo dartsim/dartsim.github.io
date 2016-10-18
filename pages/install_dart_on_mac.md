@@ -2,9 +2,8 @@
 title: Install DART on Mac
 keywords: install, mac
 last_updated: Oct 7, 2016
-sidebar: mydoc_sidebar
-permalink: mydoc_install_dart_on_mac.html
-folder: mydoc
+sidebar: home_sidebar
+permalink: install_dart_on_mac.html
 ---
 
 ## Build Environments

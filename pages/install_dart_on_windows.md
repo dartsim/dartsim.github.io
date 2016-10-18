@@ -1,9 +1,8 @@
 ---
 title: Install DART on Windows
-permalink: mydoc_install_dart_on_windows.html
+permalink: install_dart_on_windows.html
 keywords: jekyll on windows, pc, ruby, ruby dev kit
-sidebar: mydoc_sidebar
-folder: mydoc
+sidebar: home_sidebar
 ---
 
 {% include warning.html content="DART used to support Windows, but DART 6 can't be build with Visual Studio (including 2015) due to the lack of C++11 support of Visual Studio. (Issue [#753](https://github.com/dartsim/dart/issues/753) [#599](https://github.com/dartsim/dart/issues/599))" %}

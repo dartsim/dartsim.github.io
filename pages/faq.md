@@ -1,10 +1,9 @@
 ---
 title: FAQ
-permalink: mydoc_faq.html
-sidebar: mydoc_sidebar
+permalink: faq.html
+sidebar: home_sidebar
 keywords: frequently asked questions, FAQ, question and answer, collapsible sections, expand, collapse
 last_updated: November 30, 2015
-folder: mydoc
 ---
 
 ### How to use DART through Gazebo?

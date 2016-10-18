@@ -1,9 +1,8 @@
 ---
 title: DART Use Cases
 keywords: 
-sidebar: mydoc_sidebar
-permalink: mydoc_use_cases.html
-folder: mydoc
+sidebar: home_sidebar
+permalink: use_cases.html
 toc: false
 ---
 

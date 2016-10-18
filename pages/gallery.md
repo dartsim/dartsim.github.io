@@ -2,9 +2,8 @@
 title: DART Gallery
 keywords: 
 tags: [getting_started]
-sidebar: mydoc_sidebar
-permalink: mydoc_gallery.html
-folder: mydoc
+sidebar: home_sidebar
+permalink: gallery.html
 ---
 
 ## OpenSceneGraph based Examples

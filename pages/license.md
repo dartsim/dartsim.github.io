@@ -1,8 +1,7 @@
 ---
 title: DART License
-sidebar: mydoc_sidebar
-permalink: mydoc_license.html
-folder: mydoc
+sidebar: home_sidebar
+permalink: license.html
 toc: false
 ---
 

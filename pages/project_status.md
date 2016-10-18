@@ -2,9 +2,8 @@
 title: Project Status
 last_updated: Oct 11, 2016
 keywords: 
-sidebar: mydoc_sidebar
-permalink: mydoc_project_status.html
-folder: mydoc
+sidebar: home_sidebar
+permalink: project_status.html
 toc: false
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: API Documentation
-sidebar: mydoc_sidebar
-permalink: mydoc_api.html
-folder: mydoc
+last_updated: Oct 18, 2016
+sidebar: home_sidebar
+permalink: api.html
 toc: false
 ---
 

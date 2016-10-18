@@ -1,8 +1,7 @@
 ---
 title: SKEL File Format
-permalink: mydoc_skel_file_format.html
-sidebar: mydoc_sidebar
-folder: mydoc
+permalink: skel_file_format.html
+sidebar: home_sidebar
 ---
 
 # SKEL file format

@@ -2,9 +2,8 @@
 title: Install DART on Ubuntu
 keywords: install, ubuntu
 last_updated: Oct 7, 2016
-sidebar: mydoc_sidebar
-permalink: mydoc_install_dart_on_ubuntu.html
-folder: mydoc
+sidebar: home_sidebar
+permalink: install_dart_on_ubuntu.html
 ---
 
 ## Build Environments
