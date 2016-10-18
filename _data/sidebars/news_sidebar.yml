@@ -2,13 +2,9 @@
 
 entries:
 - title: Sidebar
+#  product: News
   levels: one
   folders:
 
-  - title: DART News
-    output: web
-    folderitems:
-    - title: News
-      url: /news.html
-      output: web
+
 

@@ -2,8 +2,8 @@
 
 entries:
 - title: sidebar
-  product: DART Tutorials
-  version: 6.1.0
+  product: Tutorials
+#  version: 6.1.0
   folders:
 
   - title:
