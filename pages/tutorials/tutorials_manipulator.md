@@ -95,68 +95,55 @@ newDomino->setPositions(x);
 The root FreeJoint is the only joint in the domino's Skeleton, so we can just
 use the ``Skeleton::setPositions`` function to set it.
 
-Now we'll add the Skeleton to the world:
-
-```cpp
-mWorld->addSkeleton(newDomino);
-```
-
 ### Lesson 1b: Make sure no dominoes are in collision
 
 Similar to **Lesson 3** of the **Collisions** tutorial, we'll want to make sure
 that the newly inserted Skeleton is not starting out in collision with anything,
 because this could make for a very ugly (perhaps even broken) simulation. 
 
-First, we'll tell the world to compute collisions:
+First, we get the collisiongroup with the shapeframes of the things in the world
 
 ```cpp
-dart::collision::CollisionDetector* detector =
-    mWorld->getConstraintSolver()->getCollisionDetector();
-detector->detectCollision(true, true);
+auto collisionGroup = mWorld->getConstraintSolver()->getCollisionGroup();
 ```
 
-Now we'll look through and see if any dominoes are in collision with anything
-besides the floor. We ignore collisions with the floor because, mathemetically
-speaking, if they are in contact with the floor then they register as being in
-collision. But we want the dominoes to be in contact with the floor, so this is
-okay.
+Then we'll create a second collisiongroup which only contains the new domino.
 
 ```cpp
-bool dominoCollision = false;
-size_t collisionCount = detector->getNumContacts();
-for(size_t i = 0; i < collisionCount; ++i)
-{
-  // If neither of the colliding BodyNodes belongs to the floor, then we
-  // know the new domino is in contact with something it shouldn't be
-  const dart::collision::Contact& contact = detector->getContact(i);
-  if(contact.bodyNode1.lock()->getSkeleton() != mFloor
-     && contact.bodyNode2.lock()->getSkeleton() != mFloor)
-  {
-    dominoCollision = true;
-    break;
-  }
-}
+auto collisionEngine = mWorld->getConstraintSolver()->getCollisionDetector();    
+auto newGroup = collisionEngine->createCollisionGroup(newDomino.get());
 ```
 
-The only object that could possibly have collided with something else is the
-new domino, because we don't allow the application to create new things except
-for the dominoes. So if this registered as true, then we should take the new
-domino out of the world:
+Then we'll remove the floor from the first collision group. We ignore collisions
+with the floor because, mathemetically speaking, if they are in contact with the
+floor then they register as being in collision. But we want the dominoes to be
+in contact with the floor, so this is okay. After that the collision detector
+computes if there is a collision between the new domino and the existing things.
+Then the floor is added back to the group of collision frames in the world.
+
+```cpp
+collisionGroup->removeShapeFramesOf(mFloor.get());
+bool dominoCollision = collisionGroup->collide(newGroup.get());
+collisionGroup->addShapeFramesOf(mFloor.get());
+```
+
+If the new domino would collide with the existing things in the world
+except the floor, then we will not add it to the world.
 
 ```cpp
 if(dominoCollision)
 {
-  // Remove the new domino, because it is penetrating an existing one
-  mWorld->removeSkeleton(newDomino);
+  std::cout << "The new domino would collide with something!"    << std::endl;
 }
 ```
 
 Otherwise, if the new domino is in an okay position, we should add it to the
-history:
+world and to history:
 
 ```cpp
 else
 {
+  mWorld->addSkeleton(newDomino);
   // Record the latest domino addition
   mAngles.push_back(angle);
   mDominoes.push_back(newDomino);
