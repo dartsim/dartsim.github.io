@@ -101,13 +101,13 @@ Similar to **Lesson 3** of the **Collisions** tutorial, we'll want to make sure
 that the newly inserted Skeleton is not starting out in collision with anything,
 because this could make for a very ugly (perhaps even broken) simulation. 
 
-First, we get the collisiongroup with the shapeframes of the things in the world
+First, we get the CollisionGroup with the ShapeFrames of the things in the world
 
 ```cpp
 auto collisionGroup = mWorld->getConstraintSolver()->getCollisionGroup();
 ```
 
-Then we'll create a second collisiongroup which only contains the new domino.
+Then we'll create a second CollisionGroup which only contains the new domino.
 
 ```cpp
 auto collisionEngine = mWorld->getConstraintSolver()->getCollisionDetector();    
@@ -115,7 +115,7 @@ auto newGroup = collisionEngine->createCollisionGroup(newDomino.get());
 ```
 
 Then we'll remove the floor from the first collision group. We ignore collisions
-with the floor because, mathemetically speaking, if they are in contact with the
+with the floor because, mathematically speaking, if they are in contact with the
 floor then they register as being in collision. But we want the dominoes to be
 in contact with the floor, so this is okay. After that the collision detector
 computes if there is a collision between the new domino and the existing things.
