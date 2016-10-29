@@ -77,7 +77,7 @@ sudo apt-get install libeigen3-dev libassimp-dev libccd-dev libfcl-dev libboost-
 sudo apt-get install libopenscenegraph-dev
 ```
 
-{% include note.html content="`libopenscenegraph-dev` is not an actual required dependency for building the core component of DART, but it's necessary to build [OpenSceneGraph based examples](http://dartsim.github.io/mydoc_gallery.html#openscenegraph-based-examples)." %}
+{% include note.html content="`libopenscenegraph-dev` is not an actual required dependency for building the core component of DART, but it's necessary to build [OpenSceneGraph based examples](http://dartsim.github.io/gallery.html#openscenegraph-based-examples)." %}
 
 ### Install Optional Dependencies
 
