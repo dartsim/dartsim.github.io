@@ -100,7 +100,7 @@ brew install boost
 brew install open-scene-graph
 ````
 
-{% include note.html content="`open-scene-graph` is not an actual required dependency for building the core component of DART, but it's necessary to build [OpenSceneGraph based examples](http://dartsim.github.io/mydoc_gallery.html#openscenegraph-based-examples)." %}
+{% include note.html content="`open-scene-graph` is not an actual required dependency for building the core component of DART, but it's necessary to build [OpenSceneGraph based examples](http://dartsim.github.io/gallery.html#openscenegraph-based-examples)." %}
 
 ### Install Optional Dependencies
 
