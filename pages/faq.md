@@ -32,3 +32,6 @@ In order to use DART, a full compilation of [Gazebo](http://www.gazebosim.org/) 
   gazebo worlds/dart_example.world
   ```
 
+### Which mesh file formats can be loaded via `.skel` files?
+
+DART uses [assimp](http://www.assimp.org/) to import mesh files. [Any formats supported by assimp](http://www.assimp.org/main_features_formats.html) can be loaded.
