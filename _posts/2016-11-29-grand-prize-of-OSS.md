@@ -2,7 +2,7 @@
 title:  "DART won the Grand Prize of the Open Source Software World Challenge 2016!"
 categories: dart update
 sidebar: news_sidebar
-permalink: dart_new_website.html
+permalink: grand_prize_of_OSS.html
 tags: [news]
 ---
 
