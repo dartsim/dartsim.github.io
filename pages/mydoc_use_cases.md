@@ -13,6 +13,7 @@ toc: false
 | <img src="http://www.gazebosim.org/assets/logos/gazebo_vert_pos_small-cae32db40df918570d1c43f1fccf1aa6.png"> | **[Gazebo](http://www.gazebosim.org/)** <br> Gazebo simulates multipe robots in a 3D environment, with extensive dynamic integration between objects. Gazebo supports multiple physics engines: ODE, Bullet, DART, and Simbody. [website](http://www.gazebosim.org/), [source on bitbucket](https://bitbucket.org/osrf/gazebo) |
 |  | **[PyDART2](https://github.com/sehoonha/pydart2)** <br> PyDART2 is an open source python binding of DART, an open source physics simulator. Its APIs are designed to provide concise and powerful control on DART physics worlds. Further, a user can write simulations with a numerous python scientific libraries, such as NumPy(linear algebra), SciPy(optimization), scikit-learn (machine learning), PyBrain(machine learning), and so on. ([website](http://pydart2.readthedocs.io/)) |
 |  | **[AIKIDO](https://github.com/personalrobotics/aikido)** <br> a C++ library, complete with Python bindings, for solving robotic motion planning and decision making problems. This library is tightly integrated with [DART](http://dartsim.github.io/) for kinematic/dynamics calculations and [OMPL](http://ompl.kavrakilab.org/) for motion planning. |
+|  | **[libcozmo](https://github.com/personalrobotics/libcozmo)** <br> C++ library for simulating and running Cozmo based on DART and AIKIDO |
 
 ## Academic Research
 
