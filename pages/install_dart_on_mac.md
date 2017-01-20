@@ -1,7 +1,7 @@
 ---
 title: Install DART on Mac
 keywords: install, mac
-last_updated: Oct 7, 2016
+last_updated: Jan 20, 2017
 sidebar: home_sidebar
 permalink: install_dart_on_mac.html
 ---
@@ -154,11 +154,11 @@ After this you should be able to clone the DART repository and compile it.
     git clone git://github.com/dartsim/dart.git
     ```
 
-1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.1.0`:
+1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.1.2`:
 
     ```
     cd dart
-    git checkout tags/v6.1.0
+    git checkout tags/v6.1.2
     ```
 
 1.  Create a build directory:
