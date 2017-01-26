@@ -24,16 +24,16 @@ DART 6.1 Debian packages are provided for 14.04 LTS (trusty) and 16.04 (xenial).
 * trusty
 
   ```
-  sudo apt-add-repository ppa:libccd-debs
-  sudo apt-add-repository ppa:fcl-debs
-  sudo apt-add-repository ppa:dartsim
+  sudo apt-add-repository ppa:libccd-debs/ppa
+  sudo apt-add-repository ppa:fcl-debs/ppa
+  sudo apt-add-repository ppa:dartsim/ppa
   sudo apt-get update
   ```
 
 * xenial
 
   ```
-  sudo apt-add-repository ppa:dartsim
+  sudo apt-add-repository ppa:dartsim/ppa
   sudo apt-get update
   ```
 
