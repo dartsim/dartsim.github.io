@@ -84,14 +84,22 @@ First, install Homebrew by following [the previous instruction](https://github.c
 
 ### Install Required Dependencies
 
-````bash
+#### Install All the Required and Optional Dependencies
+
+```bash
+$ brew install dartsim6 --only-dependencies
+```
+
+#### Install Dependencies Individually
+
+```bash
 $ brew install eigen
 $ brew install assimp
 $ brew install homebrew/science/libccd
 $ brew install dartsim/dart/fcl
 $ brew install boost
 $ brew install open-scene-graph
-````
+```
 
 {% include note.html content="`open-scene-graph` is not an actual required dependency for building the core component of DART, but it's necessary to build [OpenSceneGraph based examples](http://dartsim.github.io/gallery.html#openscenegraph-based-examples)." %}
 
