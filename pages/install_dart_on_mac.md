@@ -82,7 +82,7 @@ $ brew install dartsim6
 
 First, install Homebrew by following [the previous instruction](https://github.com/dartsim/dart/wiki/Mac%20Installation%20for%20DART%206#install-homebrew).
 
-### Install Required Dependencies
+### Dependencies
 
 #### Install All the Required and Optional Dependencies
 
@@ -91,6 +91,8 @@ $ brew install dartsim6 --only-dependencies
 ```
 
 #### Install Dependencies Individually
+
+##### Install Required Dependencies
 
 ```bash
 $ brew install eigen
@@ -103,7 +105,7 @@ $ brew install open-scene-graph
 
 {% include note.html content="`open-scene-graph` is not an actual required dependency for building the core component of DART, but it's necessary to build [OpenSceneGraph based examples](http://dartsim.github.io/gallery.html#openscenegraph-based-examples)." %}
 
-### Install Optional Dependencies
+##### Install Optional Dependencies
 
 * Bullet Collision Detector Support
 
