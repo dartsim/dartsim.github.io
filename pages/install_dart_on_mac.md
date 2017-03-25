@@ -53,7 +53,7 @@ You can find the install command in [Homebrew's website](http://brew.sh/). It sh
 
 ### Tapping Required Taps
 
-1.  Add `[dartsim/dart](https://github.com/dartsim/homebrew-dart)` tap so formulae of DART and the dependencies will be found
+1.  Add [`dartsim/dart`](https://github.com/dartsim/homebrew-dart) tap so formulae of DART and the dependencies will be found
 
     ```
     brew tap dartsim/dart
