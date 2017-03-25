@@ -1,7 +1,7 @@
 ---
 title: Install DART on Mac
 keywords: install, mac
-last_updated: Jan 20, 2017
+last_updated: Mar 25, 2017
 sidebar: home_sidebar
 permalink: install_dart_on_mac.html
 ---
@@ -51,7 +51,7 @@ You can find the install command in [Homebrew's website](http://brew.sh/). It sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### Tabbing Required Tabs
+### Tapping Required Taps
 
 1.  Add `[dartsim/dart](https://github.com/dartsim/homebrew-dart)` tap so formulae of DART and the dependencies will be found
 
