@@ -17,10 +17,14 @@ toc: false
 
 ## Academic Research
 
-This is a curated list of publications that used DART.
+This is a curated list of research publications using DART.
 
 | Thumbnail | Papers |
 |-----------|--------|
+| | Chatzilygeroudis, K., & Mouret, J. B. (2018). [Using Parameterized Black-Box Priors to Scale Up Model-Based Policy Search for Robotics](https://arxiv.org/pdf/1709.06917). *Proceedings of the International Conference on Robotics and Automation (ICRA)*. |
+| | Pautrat, R., Chatzilygeroudis, K., & Mouret, J.-B. (2018). [Bayesian Optimization with Automatic Prior Selection for Data-Efficient Direct Policy Search](https://arxiv.org/pdf/1709.06919). *Proceedings of the International Conference on Robotics and Automation (ICRA)*. |
+| | Supratik P., Chatzilygeroudis K., Ciosek K., Mouret JB., Osborne M., and Whiteson Sh. (2018). [Alternating Optimisation and Quadrature for Robust Control](http://www.cs.ox.ac.uk/people/shimon.whiteson/pubs/paulaaai18.pdf). *Proceedings of AAAI Conference on Artificial Intelligence*. |
+| | Chatzilygeroudis, K., Vassiliades, V. and Mouret, J.-B. (2017). [Reset-free Trial-and-Error Learning for Robot Damage Recovery](https://arxiv.org/pdf/1610.04213). *Robotics and Autonomous Systems*. |
 | <img src="https://dartsim.github.io/images/use_cases/2017_data.jpg"/> | Data-Driven Approach to Simulating Realistic Human Joint Constraints, Yifeng Jiang and C. Karen Liu , Preprint, 2017 [arXiv](https://arxiv.org/abs/1709.08685) |
 | <img src="https://dartsim.github.io/images/use_cases/2017_multi.jpg"/> | Multi-task Learning with Gradient Guided Policy Specialization, Wenhao Yu, Greg Turk, and C. Karen Liu , Preprint, 2017 [arXiv](https://arxiv.org/abs/1709.07979) |
 | <img src="https://dartsim.github.io/images/use_cases/2017_learning_human.jpg"/> | Learning Human Behaviors for Robot-Assisted Dressing, Alexander Clegg, Wenhao Yu, Jie Tan, Charlie C. Kemp, Greg Turk, and C. Karen Liu , Preprint, 2017 [arXiv](https://arxiv.org/abs/1709.07033) |
@@ -29,6 +33,9 @@ This is a curated list of publications that used DART.
 | <img src="https://dartsim.github.io/images/use_cases/2017_learning_a_unified.jpg"/> | Learning a Unified Control Policy for Safe Falling, Visak C.V. Kumar, Sehoon Ha, and C. Karen Liu, Preprint, 2017 [arXiv](https://arxiv.org/abs/1703.02905) |
 | <img src="https://dartsim.github.io/images/use_cases/2017_learning_to_navigate.jpg"/> | Learning to Navigate Cloth using Haptics, Alexander Clegg, Wenhao Yu, Zackory Erickson, Jie Tan, C. Karen Liu, and Greg Turk, Preprint, 2017 [arXiv](https://arxiv.org/abs/1703.06905) |
 | <img src="https://dartsim.github.io/images/use_cases/2017_preparing.jpg"/> | Preparing for the Unknown: Learning a Universal Policy with Online System Identification, Wenhao Yu, Jie Tan, C. Karen Liu, and Greg Turk, Preprint, 2017 [arXiv](https://arxiv.org/abs/1702.02453) |
+| | Vassiliades V., Chatzilygeroudis K., and Mouret JB. (2016). [Using centroidal voronoi tessellations to scale up the multi-dimensional archive of phenotypic elites algorithm](https://arxiv.org/pdf/1610.05729.pdf). *IEEE Transactions on Evolutionary Computation*. |
+| | Chatzilygeroudis, K., Cully, A. and Mouret, J.-B. (2016). [Towards semi-episodic learning for robot damage recovery](https://arxiv.org/abs/1610.01407). *Workshop on AI for Long-Term Autonomy at the IEEE International Conference on Robotics and Automation 2016* |
+| | Papaspyros, V., Chatzilygeroudis, K., Vassiliades, V., and Mouret, J.-B. (2016). [Safety-Aware Robot Damage Recovery Using Constrained Bayesian Optimization and Simulated Priors](https://arxiv.org/pdf/1611.09419v3). *Workshop on Bayesian Optimization at the Annual Conference on Neural Information Processing Systems (NIPS) 2016.* |
 | <img src="https://dartsim.github.io/images/use_cases/2016_a_linear.jpg"/> | A Linear-Time Variational Integrator for Multibody Systems, Jeongseok Lee, C. Karen Liu, Frank C. Park, and Siddhartha S. Srinivasa, Preprint, 2016 [arXiv](https://arxiv.org/abs/1609.02898) |
 | <img src="http://dartsim.github.io/images/use_cases/2016_simulation.jpg"/> | Simulation-Based Design of Dynamic Controllers for Humanoid Balancing, Jie Tan, Zhaoming Xie, Byron Boots, and C. Karen Liu, in IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2016 [PDF](http://www.cc.gatech.edu/~bboots3/files/Simulation_based_design.pdf) |
 | <img src="https://dartsim.github.io/images/use_cases/2016_humanoid.jpg"/> | Humanoid Manipulation Planning using Backward-Forward Search, Michael X. Grey, Caelan R. Garrett, C. Karen Liu, Aaron D. Ames, and Andrea L. Thomaz, in IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2016 [PDF](http://www.cc.gatech.edu/graphics/projects/Grey/humanoid_hbf_iros2016.pdf) [Video](http://www.cc.gatech.edu/graphics/projects/Grey/iros2016_humanoid_hbf.mp4) |
