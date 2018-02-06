@@ -50,6 +50,10 @@ entries:
     - title: License
       url: /license.html
       output: web, pdf
+      
+    - title: Citation
+      url: /citing.html
+      output: web, pdf
 
   - title: Gallery
     output: web, pdf
