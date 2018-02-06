@@ -12,7 +12,7 @@ If you use DART in an academic publication, please consider citing as
 Lee et al., (2018). DART: Dynamic Animation and Robotics Toolkit. Journal of Open Source Software, 3(22), 500, https://doi.org/10.21105/joss.00500
 ```
 BibTex
-```bib
+```
 @article{Lee2018,
   doi = {10.21105/joss.00500},
   url = {https://doi.org/10.21105/joss.00500},
