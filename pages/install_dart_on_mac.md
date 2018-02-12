@@ -1,7 +1,7 @@
 ---
 title: Install DART on Mac
 keywords: install, mac
-last_updated: Mar 25, 2017
+last_updated: Feb 12, 2018
 sidebar: home_sidebar
 permalink: install_dart_on_mac.html
 ---
@@ -10,15 +10,13 @@ permalink: install_dart_on_mac.html
 
 ### Supported Platforms
 
-DART 6.1 has been tested to run on OS X Yosemite (10.10), El Capitan (10.11), and Sierra (10.12) with [clang](http://clang.llvm.org/) (Apple LLVM version 6.0).
+DART 6.3 has been tested to run on macOS High Sierra (10.13) with [clang](http://clang.llvm.org/) (Apple LLVM version 6.0).
 
 ### Getting Headers/Developer Tools
 
 Mac OS does not ship with system headers and compiler tools by default; the easiest way to get it all is by installing Xcode through the app store.
 
 Xcode is Apple's full-fledged development environment for Mac/iPhone/iPad apps, but can also be used for developing in a number of standard languages (C, C++, Ruby, web languages, etc.), so it's a great IDE to have installed anyway.
-
-
 
 ## Install using Homebrew
 
@@ -44,20 +42,6 @@ You can find the install command in [Homebrew's website](http://brew.sh/). It sh
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### Tapping Required Taps
-
-1.  Add [`dartsim/dart`](https://github.com/dartsim/homebrew-dart) tap so formulae of DART and the dependencies will be found
-
-    ```bash
-    $ brew tap dartsim/dart
-    ```
-
-1.  Also add [homebrew/science](https://github.com/Homebrew/homebrew-science) tap for [libccd formula](https://github.com/Homebrew/homebrew-science/blob/master/libccd.rb) and [flann formula](https://github.com/Homebrew/homebrew-science/blob/master/flann.rb)
-
-    ```bash
-    $ brew tap homebrew/science
-    ```
-
 ### Install DART 6
 
 Now you can install DART with the following command:
@@ -81,7 +65,7 @@ First, install Homebrew by following [the previous instruction](https://github.c
 #### Install All the Required and Optional Dependencies
 
 ```bash
-$ brew install dartsim6 --only-dependencies
+$ brew install dartsim --only-dependencies
 ```
 
 #### Install Dependencies Individually
@@ -91,8 +75,8 @@ $ brew install dartsim6 --only-dependencies
 ```bash
 $ brew install eigen
 $ brew install assimp
-$ brew install homebrew/science/libccd
-$ brew install dartsim/dart/fcl
+$ brew install libccd
+$ brew install fcl
 $ brew install boost
 $ brew install open-scene-graph
 ```
@@ -112,19 +96,19 @@ $ brew install open-scene-graph
 * NLopt Optimization Support
 
   ```
-  $ brew install homebrew/science/nlopt
+  $ brew install nlopt
   ```
 
 * IPopt Optimization Support
 
   ```
-  $ brew install homebrew/science/ipopt
+  $ brew install dartsim/dart/ipopt
   ```
 
 * DART Planning Module
 
   ```
-  $ brew install homebrew/science/flann
+  $ brew install flann
   ```
 
 * DART Parsers: SKEL, URDF, SDF, VSK
@@ -132,7 +116,7 @@ $ brew install open-scene-graph
   ```
   $ brew install tinyxml
   $ brew install tinyxml2
-  $ brew install ros/deps/urdfdom
+  $ brew install urdfdom
   ```
 
 * OpenSceneGraph GUI
@@ -151,11 +135,11 @@ After this you should be able to clone the DART repository and compile it.
     $ git clone git://github.com/dartsim/dart.git
     ```
 
-1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.1.2`:
+1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.3.0`:
 
     ```
     $ cd dart
-    $ git checkout tags/v6.1.2
+    $ git checkout tags/v6.3.0
     ```
 
 1.  Create a build directory:
