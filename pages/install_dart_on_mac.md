@@ -63,19 +63,13 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 Now you can install DART with the following command:
 
 ```bash
-$ brew install dartsim6
+$ brew install dartsim
 ```
-
-* If you want the cutting edge DART from the master branch
-
-  ```bash
-  $ brew install dartsim6 --HEAD
-  ```
 
 * If you want to see the detailed information of the formula
 
   ```bash
-  $ brew info dartsim6
+  $ brew info dartsim
   ```
 
 ## Install from Source using Homebrew
