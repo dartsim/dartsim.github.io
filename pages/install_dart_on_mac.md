@@ -1,7 +1,7 @@
 ---
 title: Install DART on Mac
 keywords: install, mac
-last_updated: Feb 12, 2018
+last_updated: Feb 16, 2018
 sidebar: home_sidebar
 permalink: install_dart_on_mac.html
 ---
@@ -50,80 +50,15 @@ Now you can install DART with the following command:
 $ brew install dartsim
 ```
 
-* If you want to see the detailed information of the formula
-
-  ```bash
-  $ brew info dartsim
-  ```
-
 ## Install from Source using Homebrew
 
 First, install Homebrew by following [the previous instruction](https://github.com/dartsim/dart/wiki/Mac%20Installation%20for%20DART%206#install-homebrew).
 
-### Dependencies
-
-#### Install All the Required and Optional Dependencies
+### Install Dependencies
 
 ```bash
 $ brew install dartsim --only-dependencies
 ```
-
-#### Install Dependencies Individually
-
-##### Install Required Dependencies
-
-```bash
-$ brew install eigen
-$ brew install assimp
-$ brew install libccd
-$ brew install fcl
-$ brew install boost
-$ brew install open-scene-graph
-```
-
-{% include note.html content="`open-scene-graph` is not an actual required dependency for building the core component of DART, but it's necessary to build [OpenSceneGraph based examples](http://dartsim.github.io/gallery.html#openscenegraph-based-examples)." %}
-
-##### Install Optional Dependencies
-
-* Bullet Collision Detector Support
-
-  To use bullet's collision detection routine, bullet is needed.
-
-  ```
-  $ brew install bullet
-  ```
-
-* NLopt Optimization Support
-
-  ```
-  $ brew install nlopt
-  ```
-
-* IPopt Optimization Support
-
-  ```
-  $ brew install dartsim/dart/ipopt
-  ```
-
-* DART Planning Module
-
-  ```
-  $ brew install flann
-  ```
-
-* DART Parsers: SKEL, URDF, SDF, VSK
-
-  ```
-  $ brew install tinyxml
-  $ brew install tinyxml2
-  $ brew install urdfdom
-  ```
-
-* OpenSceneGraph GUI
-  {% include note.html content="If you're going to build OpenSceneGraph based examples, then please install OpenSceneGraph." %}
-  ```
-  $ brew install open-scene-graph
-  ```
 
 ### Build and Install DART
 
