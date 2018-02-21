@@ -6,7 +6,7 @@ last_updated: Feb 21, 2018
 sidebar: home_sidebar
 ---
 
-{% include warning.html content="Using DART on Windows is still experimental; It hans't been fully tested." %}
+{% include warning.html content="Using DART on Windows is still experimental; It hasn't been fully tested." %}
 
 ## Supported Platforms and Compilers
 
