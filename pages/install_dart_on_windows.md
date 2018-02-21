@@ -25,7 +25,9 @@ Please find vcpkg installation instruction from the [website](https://vcpkg.read
 
 ```powershell
 # Required dependencies
-> vcpkg install boost
+> vcpkg install boost-regex
+> vcpkg install boost-system
+> vcpkg install boost-filesystem
 > vcpkg install eigen3
 > vcpkg install ccd
 > vcpkg install fcl
