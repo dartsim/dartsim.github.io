@@ -2,7 +2,7 @@
 title: Install DART on Windows
 permalink: install_dart_on_windows.html
 keywords: jekyll on windows, pc, ruby, ruby dev kit
-last_updated: Feb 16, 2018
+last_updated: Feb 21, 2018
 sidebar: home_sidebar
 ---
 
@@ -20,6 +20,28 @@ Windows 10 64-bit, **Visual Studio 2017 64-bit**. Please make sure that your Vis
 #### Install vcpkg
 
 Please find vcpkg installation instruction from the [website](https://vcpkg.readthedocs.io/en/latest/examples/using-sqlite/#install).
+
+#### Install Dependencies
+
+```powershell
+# Required dependencies
+> vcpkg install boost
+> vcpkg install eigen3
+> vcpkg install ccd
+> vcpkg install fcl
+> vcpkg install assimp
+
+# Optional dependencies
+> vcpkg install nlopt
+> vcpkg install bullet3
+> vcpkg install ode
+> vcpkg install flann
+> vcpkg install tinyxml2
+> vcpkg install urdfdom
+> vcpkg install opengl
+> vcpkg install freeglut
+> vcpkg install osg
+```
 
 ### Build and Install DART using CMake
 
@@ -47,7 +69,7 @@ Go to [the tag page](https://github.com/dartsim/dart/tags) and download the sour
 
 Run CMake (cmake-gui). Select the directory where you downloaded DART. Name a directory where you want the Visual Studio project files to be placed. You should probably place it under the DART directory, e. g. `[DART directory]\build`
 
-Click "Configure" and choose your development environment (Visual Studio 14).
+Click "Configure" and choose your development environment (Visual Studio 154).
 
 If you did not install the DART prerequisites in the default install location, you need to change `CMAKE_INSTALL_PREFIX` to your install location and click "Configure" again.
 
