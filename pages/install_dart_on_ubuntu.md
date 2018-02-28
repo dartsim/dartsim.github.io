@@ -1,7 +1,7 @@
 ---
 title: Install DART on Ubuntu
 keywords: install, ubuntu
-last_updated: Jan 20, 2017
+last_updated: Feb 27, 2018
 sidebar: home_sidebar
 permalink: install_dart_on_ubuntu.html
 ---
@@ -10,7 +10,7 @@ permalink: install_dart_on_ubuntu.html
 
 ### Supported Platforms
 
-We support Ubuntu 32 and 64 bit **14.04 LTS (trusty)** and **16.04 (xenial)** systems.
+We support Ubuntu 32 and 64 bit **14.04 LTS (Trusty)** and **16.04 (Xenial)** systems.
 
 
 ## Install DART using Ubuntu packages
@@ -19,9 +19,9 @@ If you want to use dart as a dependent library for your development, then instal
 
 ### Adding [Personal Package Archives (PPA's) for DART and dependencies](https://launchpad.net/~dartsim/+archive/ubuntu/ppa)
 
-DART 6.1 Debian packages are provided for 14.04 LTS (trusty) and 16.04 (xenial).
+DART 6.3 Debian packages are provided for 14.04 LTS (Trusty) and 16.04 (Xenial).
 
-* trusty
+* Trusty
 
   ```
   sudo apt-add-repository ppa:libccd-debs/ppa
@@ -30,7 +30,7 @@ DART 6.1 Debian packages are provided for 14.04 LTS (trusty) and 16.04 (xenial).
   sudo apt-get update
   ```
 
-* xenial
+* Xenial
 
   ```
   sudo apt-add-repository ppa:dartsim/ppa
@@ -108,8 +108,8 @@ sudo apt-get install libbullet-dev
 * DART Parsers: SKEL, URDF, SDF, VSK
 
   ```
-  sudo apt-get install libtinyxml-dev libtinyxml2-dev
-  sudo apt-get install liburdfdom-dev liburdfdom-headers-dev
+  sudo apt-get install libtinyxml2-dev
+  sudo apt-get install liburdfdom-dev
   ```
 
 * GLUT GUI
@@ -134,11 +134,11 @@ sudo apt-get install libbullet-dev
     git clone git://github.com/dartsim/dart.git
     ```
 
-1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.1.2`:
+1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.3.0`:
 
     ```
     cd dart
-    git checkout tags/v6.1.2
+    git checkout tags/v6.3.0
     ```
 
 1.  Create a build directory:
