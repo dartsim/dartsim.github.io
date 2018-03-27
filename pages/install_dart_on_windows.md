@@ -2,7 +2,7 @@
 title: Install DART on Windows
 permalink: install_dart_on_windows.html
 keywords: jekyll on windows, pc, ruby, ruby dev kit
-last_updated: Feb 21, 2018
+last_updated: Mar 26, 2018
 sidebar: home_sidebar
 ---
 
@@ -70,7 +70,7 @@ Go to [the tag page](https://github.com/dartsim/dart/tags) and download the sour
 
 Run CMake (cmake-gui). Select the directory where you downloaded DART. Name a directory where you want the Visual Studio project files to be placed. You should probably place it under the DART directory, e. g. `[DART directory]\build`
 
-Click "Configure" and choose your development environment (Visual Studio 154).
+Click "Configure" and choose your development environment (Visual Studio 15).
 
 If you did not install the DART prerequisites in the default install location, you need to change `CMAKE_INSTALL_PREFIX` to your install location and click "Configure" again.
 
