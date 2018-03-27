@@ -1,7 +1,7 @@
 ---
 title: Install DART on Ubuntu
 keywords: install, ubuntu
-last_updated: Mar 26, 2018
+last_updated: Mar 27, 2018
 sidebar: home_sidebar
 permalink: install_dart_on_ubuntu.html
 ---
@@ -10,8 +10,7 @@ permalink: install_dart_on_ubuntu.html
 
 ### Supported Platforms
 
-DART 6.4 supports Ubuntu 32 and 64 bit **14.04 LTS (Trusty)**, **16.04 (Xenial)**, and  **17.10 (Artful)** systems.
-
+DART 6.4 supports Ubuntu 32 and 64 bit **14.04 LTS (Trusty)**, **16.04 (Xenial)**, **17.10 (Artful)**, and **18.04 (Bionic)** systems.
 
 ## Install DART using Ubuntu packages
 
@@ -19,7 +18,7 @@ If you want to use dart as a dependent library for your development, then instal
 
 ### Adding [Personal Package Archives (PPA's) for DART and dependencies](https://launchpad.net/~dartsim/+archive/ubuntu/ppa)
 
-DART 6.4 Debian packages are provided for 14.04 LTS (Trusty), 16.04 (Xenial), and 17.10 (Artful).
+DART 6.4 Debian packages are provided for 14.04 LTS (Trusty), 16.04 (Xenial), 17.10 (Artful), and 18.04 (Bionic).
 
 * Trusty
 
@@ -30,7 +29,7 @@ DART 6.4 Debian packages are provided for 14.04 LTS (Trusty), 16.04 (Xenial), an
   sudo apt-get update
   ```
 
-* Xenial and Artful
+* Xenial, Artful, and Bionic
 
   ```
   sudo apt-add-repository ppa:dartsim/ppa
