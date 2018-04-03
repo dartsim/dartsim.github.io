@@ -106,15 +106,12 @@ The default appearance for everything is to be colored blue, so we'll want to
 iterate through these two Shapes in each BodyNode, setting their colors to blue.
 
 ```cpp
-for(size_t i = 0; i < mPendulum->getNumBodyNodes(); ++i)
+for(std::size_t i = 0; i < mPendulum->getNumBodyNodes(); ++i)
 {
   BodyNode* bn = mPendulum->getBodyNode(i);
-  for(size_t j = 0; j < 2; ++j)
-  {
-    const ShapePtr& shape = bn->getVisualizationShape(j);
-
-    shape->setColor(dart::Color::Blue());
-  }
+  auto visualShapeNodes = bn->getShapeNodesWith<VisualAspect>();
+  for(std::size_t j = 0; j < 2; ++j)
+    visualShapeNodes[j]->getVisualAspect()->setColor(dart::Color::Blue());
 
   // TODO: Remove any arrows
 }
@@ -229,8 +226,8 @@ Now we'll want to visualize the force being applied to the body. First, we'll
 grab the Shape for the body and color it red:
 
 ```cpp
-const ShapePtr& shape = bn->getVisualizationShape(1);
-shape->setColor(dart::Color::Red());
+auto visualShapeNodes = bn->getShapeNodesWith<VisualAspect>();
+visualShapeNodes[1]->getVisualAspect()->setColor(dart::Color::Red());
 ```
 
 Last time we grabbed the 0-index visualization shape, because we trusted that
