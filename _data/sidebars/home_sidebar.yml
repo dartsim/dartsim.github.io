@@ -43,7 +43,7 @@ entries:
       url: /history.html
       output: web, pdf
 
-    - title: Constributors
+    - title: Contributors
       external_url: https://github.com/dartsim/dart/blob/master/CONTRIBUTING.md#dart-contributors
       output: web, pdf
 
