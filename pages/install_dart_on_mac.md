@@ -84,7 +84,7 @@ After this you should be able to clone the DART repository and compile it.
     $ cd build
     ```
 
-1.  Configure and build dart:
+1.  Configure and build DART:
 
     ```
     $ cmake ..
@@ -115,12 +115,30 @@ After this you should be able to clone the DART repository and compile it.
 
       * DART tests, tutorials, examples
 
-        If you want to build the tests, tutorials, or examples:
+        If you want to build the tests, tutorials, or examples, run follows:
 
         ```
         $ make -j4 tests
         $ make -j4 tutorials
         $ make -j4 examples
+        ```
+        
+        Once you successfully build the tests, you can run all the tests at once as:
+        
+        ```
+        $ make -j4 test  # or cmake -j4
+        ```
+        
+        or run a particular test as:
+        
+        ```
+        $ ./unittests/<category_name>/<test_name>  # e.g., ./unittests/unit/test_Uri
+        ```
+        
+        Also, you can run tutorials and examples as:
+        
+        ```
+        $ ./bin/<executable_name>  # e.g., ./bin/rigidCubes
         ```
 
 1.  Install DART:
