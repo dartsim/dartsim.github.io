@@ -125,19 +125,19 @@ After this you should be able to clone the DART repository and compile it.
         
         Once you successfully build the tests, you can run all the tests at once as:
         
-        ```
+        ```shell
         $ make -j4 test  # or cmake -j4
         ```
         
         or run a particular test as:
         
-        ```
+        ```shell
         $ ./unittests/<category_name>/<test_name>  # e.g., ./unittests/unit/test_Uri
         ```
         
         Also, you can run tutorials and examples as:
         
-        ```
+        ```shell
         $ ./bin/<executable_name>  # e.g., ./bin/rigidCubes
         ```
 
