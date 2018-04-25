@@ -95,7 +95,7 @@ sudo apt-get install libopenscenegraph-dev
 * Bullet Collision Detector Support
 
   ```
-sudo apt-get install libbullet-dev
+  sudo apt-get install libbullet-dev
   ```
 
 * DART Planning Module
@@ -147,7 +147,7 @@ sudo apt-get install libbullet-dev
     cd build
     ```
 
-1.  Configure and build dart:
+1.  Configure and build DART:
 
     ```
     cmake ..
@@ -158,12 +158,30 @@ sudo apt-get install libbullet-dev
 
     * DART tests, tutorials, examples
 
-      If you want to build the tests, tutorials, or examples:
+      If you want to build the tests, tutorials, or examples, run follows:
 
       ```
       make -j4 tests
       make -j4 tutorials
       make -j4 examples
+      ```
+      
+      Once you successfully build the tests, you can run all the tests at once as:
+      
+      ```shell
+      $ make -j4 test  # or cmake -j4
+      ```
+      
+      or run a particular test as:
+      
+      ```shell
+      $ ./unittests/<category_name>/<test_name>  # e.g., ./unittests/unit/test_Uri
+      ```
+      
+      Also, you can run tutorials and examples as:
+      
+      ```shell
+      $ ./bin/<executable_name>  # e.g., ./bin/rigidCubes
       ```
 
   * Build Type
