@@ -33,7 +33,7 @@ DART 6.4 Debian packages are provided for 14.04 LTS (Trusty), 16.04 (Xenial), 17
 
   ```
   sudo apt-add-repository ppa:dartsim/ppa
-  sudo apt-get update
+  sudo apt-get update  # not necessary for Bionic
   ```
 
 ### Install DART
