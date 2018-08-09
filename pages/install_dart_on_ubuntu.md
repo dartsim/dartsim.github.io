@@ -1,7 +1,7 @@
 ---
 title: Install DART on Ubuntu
 keywords: install, ubuntu
-last_updated: Mar 27, 2018
+last_updated: Aug 8, 2018
 sidebar: home_sidebar
 permalink: install_dart_on_ubuntu.html
 ---
@@ -10,7 +10,7 @@ permalink: install_dart_on_ubuntu.html
 
 ### Supported Platforms
 
-DART 6.4 supports Ubuntu 32 and 64 bit **14.04 LTS (Trusty)**, **16.04 (Xenial)**, **17.10 (Artful)**, and **18.04 (Bionic)** systems.
+DART 6.6 supports Ubuntu 32 and 64 bit **14.04 LTS (Trusty)**, **16.04 (Xenial)**, and **18.04 (Bionic)** systems.
 
 ## Install DART using Ubuntu packages
 
@@ -18,7 +18,7 @@ If you want to use dart as a dependent library for your development, then instal
 
 ### Adding [Personal Package Archives (PPA's) for DART and dependencies](https://launchpad.net/~dartsim/+archive/ubuntu/ppa)
 
-DART 6.4 Debian packages are provided for 14.04 LTS (Trusty), 16.04 (Xenial), 17.10 (Artful), and 18.04 (Bionic).
+DART 6.6 Debian packages are provided for 14.04 LTS (Trusty), 16.04 (Xenial), and 18.04 (Bionic).
 
 * Trusty
 
@@ -29,7 +29,7 @@ DART 6.4 Debian packages are provided for 14.04 LTS (Trusty), 16.04 (Xenial), 17
   sudo apt-get update
   ```
 
-* Xenial, Artful, and Bionic
+* Xenial, and Bionic
 
   ```
   sudo apt-add-repository ppa:dartsim/ppa
@@ -98,6 +98,11 @@ sudo apt-get install libopenscenegraph-dev
   sudo apt-get install libbullet-dev
   ```
 
+* VoxelGridShape
+  ```
+  sudo apt-get install liboctomap-dev
+  ```
+
 * DART Planning Module
 
   ```
@@ -133,11 +138,11 @@ sudo apt-get install libopenscenegraph-dev
     git clone git://github.com/dartsim/dart.git
     ```
 
-1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.4.0`:
+1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.6.1`:
 
     ```
     cd dart
-    git checkout tags/v6.4.0
+    git checkout tags/v6.6.1
     ```
 
 1.  Create a build directory:
