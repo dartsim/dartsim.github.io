@@ -96,7 +96,7 @@ entries:
       output: web, pdf
 
     - title: API Documentation
-      url: /api.html
+      external_url: https://github.com/dartsim/dart/blob/gh-pages/README.md
       output: web, pdf
 
     - title: FAQ
