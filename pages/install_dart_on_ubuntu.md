@@ -10,15 +10,15 @@ permalink: install_dart_on_ubuntu.html
 
 ### Supported Platforms
 
-DART 6.6 supports Ubuntu 32 and 64 bit **14.04 LTS (Trusty)**, **16.04 (Xenial)**, and **18.04 (Bionic)** systems.
+DART 6.6 supports Ubuntu 32 and 64 bit **14.04 LTS (Trusty)**, **16.04 (Xenial)**, **18.04 (Bionic)**, and **18.10 (Cosmic)** systems.
 
 ## Install DART using Ubuntu packages
 
-If you want to use dart as a dependent library for your development, then installing dart using Ubuntu packages is the most convenient way. 
+If you want to use dart as a dependent library for your development, then installing dart using Ubuntu packages is the most convenient way.
 
 ### Adding [Personal Package Archives (PPA's) for DART and dependencies](https://launchpad.net/~dartsim/+archive/ubuntu/ppa)
 
-DART 6.6 Debian packages are provided for 14.04 LTS (Trusty), 16.04 (Xenial), and 18.04 (Bionic).
+DART 6.6 Debian packages are provided for 14.04 LTS (Trusty), 16.04 (Xenial), 18.04 (Bionic), and 18.10 (Cosmic).
 
 * Trusty
 
@@ -29,7 +29,7 @@ DART 6.6 Debian packages are provided for 14.04 LTS (Trusty), 16.04 (Xenial), an
   sudo apt-get update
   ```
 
-* Xenial, and Bionic
+* Xenial, Bionic, and Cosmic
 
   ```
   sudo apt-add-repository ppa:dartsim/ppa
@@ -98,6 +98,12 @@ sudo apt-get install libopenscenegraph-dev
   sudo apt-get install libbullet-dev
   ```
 
+* ODE Collision Detector Support
+
+  ```
+  sudo apt-get install libode-dev
+  ```
+
 * VoxelGridShape
   ```
   sudo apt-get install liboctomap-dev
@@ -138,21 +144,21 @@ sudo apt-get install libopenscenegraph-dev
     git clone git://github.com/dartsim/dart.git
     ```
 
-1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.6.1`:
+2.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.6.1`:
 
     ```
     cd dart
     git checkout tags/v6.6.1
     ```
 
-1.  Create a build directory:
+3.  Create a build directory:
 
     ```
     mkdir build
     cd build
     ```
 
-1.  Configure and build DART:
+4.  Configure and build DART:
 
     ```
     cmake ..
@@ -170,21 +176,21 @@ sudo apt-get install libopenscenegraph-dev
       make -j4 tutorials
       make -j4 examples
       ```
-      
+
       Once you successfully build the tests, you can run all the tests at once as:
-      
+
       ```shell
       $ make -j4 test  # or cmake -j4
       ```
-      
+
       or run a particular test as:
-      
+
       ```shell
       $ ./unittests/<category_name>/<test_name>  # e.g., ./unittests/unit/test_Uri
       ```
-      
+
       Also, you can run tutorials and examples as:
-      
+
       ```shell
       $ ./bin/<executable_name>  # e.g., ./bin/rigidCubes
       ```
@@ -200,11 +206,11 @@ sudo apt-get install libopenscenegraph-dev
     The default build type is `Release`.
 
 1.  Install DART:
-    
+
     ```
     sudo make install
     ```
-    
+
     If you want to uninstall DART, then:
 
     ```
