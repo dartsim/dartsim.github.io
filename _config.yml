@@ -28,9 +28,9 @@ exclude:
   - .gitignore
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_subject_line: DART feedback
+# feedback_subject_line: DART feedback
 
-feedback_email: jslee02@gmail.com
+# feedback_email: jslee02@gmail.com
 # used as a contact email for the Feedback link in the top navigation bar
 
 # feedback_disable: true
@@ -39,7 +39,7 @@ feedback_email: jslee02@gmail.com
 # feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
-# feedback_link: "http://helpy.io/"
+feedback_link: "https://github.com/dartsim/dart/issues/new"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
