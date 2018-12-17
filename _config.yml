@@ -33,13 +33,13 @@ exclude:
 # feedback_email: jslee02@gmail.com
 # used as a contact email for the Feedback link in the top navigation bar
 
-# feedback_disable: true
+feedback_disable: true
 # if you uncomment the previous line, the Feedback link gets removed
 
 # feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
-feedback_link: "https://github.com/dartsim/dart/issues/new"
+# feedback_link: "https://github.com/dartsim/dart/issues/new"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
