@@ -10,7 +10,7 @@ permalink: install_dart_on_mac.html
 
 ### Supported Platforms
 
-DART 6.6 has been tested to run on macOS El Capitan (10.11), Sierra (10.12), and High Sierra (10.13) with [clang](http://clang.llvm.org/) (Apple LLVM version 6.0).
+DART 6.7 has been tested to run on macOS High Sierra (10.13) with [clang](http://clang.llvm.org/) (Apple LLVM version 9.1).
 
 ### Getting Headers/Developer Tools
 
@@ -70,11 +70,11 @@ After this you should be able to clone the DART repository and compile it.
     $ git clone git://github.com/dartsim/dart.git
     ```
 
-1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.6.1`:
+1.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.7.0`:
 
     ```
     $ cd dart
-    $ git checkout tags/v6.6.1
+    $ git checkout tags/v6.7.0
     ```
 
 1.  Create a build directory:
