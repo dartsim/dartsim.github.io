@@ -1,7 +1,7 @@
 ---
 title: Install DART on Ubuntu
 keywords: install, ubuntu
-last_updated: Aug 8, 2018
+last_updated: Jan 10, 2019
 sidebar: home_sidebar
 permalink: install_dart_on_ubuntu.html
 ---
@@ -82,9 +82,17 @@ sudo apt-get install libopenscenegraph-dev
 
 * NLopt Optimization Support
 
-  ```
-  sudo apt-get install libnlopt-dev
-  ```
+  * Trusty, Xenial, and Bionic
+  
+    ```
+    sudo apt-get install libnlopt-dev
+    ```
+  
+  * Cosmic
+  
+    ```
+    sudo apt-get install libnlopt-cxx-dev
+    ```
 
 * IPopt Optimization Support
 
