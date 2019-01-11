@@ -10,7 +10,7 @@ permalink: install_dart_on_ubuntu.html
 
 ### Supported Platforms
 
-DART 6.6 supports Ubuntu 32 and 64 bit **14.04 LTS (Trusty)**, **16.04 (Xenial)**, **18.04 (Bionic)**, and **18.10 (Cosmic)** systems.
+DART 6.7 supports Ubuntu 32 and 64 bit **16.04 (Xenial)**, **18.04 (Bionic)**, and **18.10 (Cosmic)** systems.
 
 ## Install DART using Ubuntu packages
 
@@ -18,23 +18,12 @@ If you want to use dart as a dependent library for your development, then instal
 
 ### Adding [Personal Package Archives (PPA's) for DART and dependencies](https://launchpad.net/~dartsim/+archive/ubuntu/ppa)
 
-DART 6.6 Debian packages are provided for 14.04 LTS (Trusty), 16.04 (Xenial), 18.04 (Bionic), and 18.10 (Cosmic).
+DART 6.6 Debian packages are provided for 16.04 (Xenial), 18.04 (Bionic), and 18.10 (Cosmic).
 
-* Trusty
-
-  ```
-  sudo apt-add-repository ppa:libccd-debs/ppa
-  sudo apt-add-repository ppa:fcl-debs/ppa
-  sudo apt-add-repository ppa:dartsim/ppa
-  sudo apt-get update
-  ```
-
-* Xenial, Bionic, and Cosmic
-
-  ```
-  sudo apt-add-repository ppa:dartsim/ppa
-  sudo apt-get update  # not necessary for Bionic
-  ```
+```
+sudo apt-add-repository ppa:dartsim/ppa
+sudo apt-get update  # not necessary for Bionic
+```
 
 ### Install DART
 
@@ -82,7 +71,7 @@ sudo apt-get install libopenscenegraph-dev
 
 * NLopt Optimization Support
 
-  * Trusty, Xenial, and Bionic
+  * Xenial and Bionic
   
     ```
     sudo apt-get install libnlopt-dev
@@ -152,11 +141,11 @@ sudo apt-get install libopenscenegraph-dev
     git clone git://github.com/dartsim/dart.git
     ```
 
-2.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.6.1`:
+2.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.7.0`:
 
     ```
     cd dart
-    git checkout tags/v6.6.1
+    git checkout tags/v6.7.0
     ```
 
 3.  Create a build directory:
@@ -224,4 +213,3 @@ sudo apt-get install libopenscenegraph-dev
     ```
     sudo make uninstall
     ```
-
