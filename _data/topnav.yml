@@ -10,6 +10,10 @@ topnav:
   items:
     - title: Tutorials
       url: /tutorials_introduction.html
+- title: Topnav
+  items:
+    - title: Forum
+      external_url: https://dartsim.discourse.group/
 
 #Topnav dropdowns
 topnav_dropdowns:
@@ -18,7 +22,7 @@ topnav_dropdowns:
     - title: Github
       folderitems:
         - title: View DART on Github
-          external_url: http://github.com/dartsim/dart
+          external_url: https://github.com/dartsim/dart
         - title: Report DART Issue
           external_url: https://github.com/dartsim/dart/issues
 #         - title: View DART Website on Github
