@@ -22,12 +22,17 @@ DART (Dynamic Animation and Robotics Toolkit) is a collaborative, cross-platform
 * Support models described in URDF and SDF formats.
 * Provide default integration methods, semi-implicit Euler and RK4, as well as extensible
 * API for other numerical integration methods.
-* Support multiple collision detectors: FCL, Bullet, and ODE.
 * Support lazy evaluation and automatic update of kinematic and dynamic quantities.
 * Provide extensible API for embedding user-provided classes into DART data structures.
 * Support comprehensive recording of events in simulation history.
-* Support OpenGL and OpenSceneGraph.
-* Provide extensible API to interface with various optimization methods.
+* Provide 3D visualization API using OpenGL and OpenSceneGraph with ImGui support.
+* Provide extensible API to interface with various optimization problems such as nonlinear programming and multi-objective optimization.
+
+### Collision Detection
+
+* Support multiple collision detectors: FCL, Bullet, and ODE.
+* Support various collision shapes including primitive shapes, concave mesh, and probablistic voxel grid.
+* Support minimum distance computation.
 
 ### Kinematics
 
