@@ -75,15 +75,27 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: On Ubuntu (Recommended)
+    - title: Ubuntu
       url: /install_dart_on_ubuntu.html
       output: web, pdf
 
-    - title: On Mac (Recommended)
+    # - title: Debian (experimental)
+    #   url: /install_dart_on_debian.html
+    #   output: web, pdf
+
+    # - title: Archlinux (experimental)
+    #   url: /install_dart_on_archlinux.html
+    #   output: web, pdf
+
+    # - title: FreeBSD (experimental)
+    #   url: /install_dart_on_freebsd.html
+    #   output: web, pdf
+
+    - title: macOS
       url: /install_dart_on_mac.html
       output: web, pdf
 
-    - title: On Windows
+    - title: Windows (experimental)
       url: /install_dart_on_windows.html
       output: web, pdf
 
