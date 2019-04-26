@@ -17,10 +17,10 @@ toc: false
 
 ## Project Statistics
 
-| Measurement            | v2.6 | v3.0 | v4.3 | v5.1 | v6.3 |
+| Measurement            | v2.6 | v3.0 | v4.3 | v5.1 | v6.8 |
 | ---------------------- | ---- | ---- | ---- | ---- | ---- |
-| Lines of code          |  26k |  24k |  39k |  58k |  68k |
-| Lines of comments      |  10k |  10k |  18k |  26k |  32k |
-| Test function coverage |   -  |   -  |   -  |   -  |  52% |
+| Lines of code          |  26k |  24k |  39k |  58k |  78k |
+| Lines of comments      |  10k |  10k |  18k |  26k |  37k |
+| Test function coverage |   -  |   -  |   -  |   -  |  56% |
 
 * Measured using [cloc](http://cloc.sourceforge.net/): `cloc dart --fullpath --not-match-d=dart/external`

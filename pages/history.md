@@ -9,6 +9,8 @@ toc: false
 
 | Year | Event |
 |------|-------|
+| 2019 | [DART Forum](https://dartsim.discourse.group/) created |
+| 2018 | DART accepted to the [Journal of Open Source Software](http://joss.theoj.org/papers/10.21105/joss.00500) |
 | 2017 | [Open Source Robotics Foundation](https://www.osrfoundation.org/) started to contribute to DART |
 |      | [Personal Robotics Lab](http://personalrobotics.cs.washington.edu/) moved to [University of Washington](http://www.washington.edu/) continuing to contribute to DART |
 | 2016 | [DART 6.0](https://github.com/dartsim/dart/releases/tag/v6.0.0) released |
