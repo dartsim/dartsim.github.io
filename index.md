@@ -17,17 +17,17 @@ DART (Dynamic Animation and Robotics Toolkit) is a collaborative, cross-platform
 ### General
 
 * Open source under BSD license written in C++.
-* Support Linux, Mac OSX, and Windows.
+* Support multiple platforms: Ubuntu, Archlinux, FreeBSD, macOS, and Windows.
 * Fully integrated with Gazebo.
 * Support models described in URDF and SDF formats.
 * Provide default integration methods, semi-implicit Euler and RK4, as well as extensible
 * API for other numerical integration methods.
-* Support multiple collision detectors: FCL and Bullet.
+* Support multiple collision detectors: FCL, Bullet, and ODE.
 * Support lazy evaluation and automatic update of kinematic and dynamic quantities.
 * Provide extensible API for embedding user-provided classes into DART data structures.
 * Support comprehensive recording of events in simulation history.
 * Support OpenGL and OpenSceneGraph.
-* Provide extensible API to interface with various optimization methods
+* Provide extensible API to interface with various optimization methods.
 
 ### Kinematics
 
@@ -37,8 +37,9 @@ DART (Dynamic Animation and Robotics Toolkit) is a collaborative, cross-platform
 * Provide comprehensive access to kinematic states (e.g. transformation, position, velocity, or acceleration) of arbitrary entity and coordinate frames
 * Provide comprehensive access to various Jacobian matrices and their derivatives.
 * Support flexible conversion of coordinate frames.
-* A fully modular inverses kinematics framework
-* A plug-and-play hierarchical whole-body inverse kinematics solver
+* A fully modular inverses kinematics framework.
+* A plug-and-play hierarchical whole-body inverse kinematics solver.
+* Provide analytic inverse kinematics interface with ikfast support.
 
 ### Dynamics
 
@@ -53,4 +54,3 @@ DART (Dynamic Animation and Robotics Toolkit) is a collaborative, cross-platform
 * Support various Cartesian constraints and provide extensible API for user-defined constraints.
 * Provide multiple constraint solvers: Lemke method, Dantzig method, and PSG method.
 * Support dynamic systems with closed-loop structures.
-
