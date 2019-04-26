@@ -10,8 +10,7 @@ sidebar: home_sidebar
 
 ## Supported Platforms and Compilers
 
-Windows 10 64-bit, **Visual Studio 2017 64-bit**. Please make sure that your Visual Studio is up to date.
-
+Windows 10 64-bit, **Visual Studio 2019 64-bit**. Please make sure that your Visual Studio is up to date.
 
 ## Install DART from Source
 
@@ -25,30 +24,15 @@ Please find vcpkg installation instruction from the [website](https://vcpkg.read
 
 ```powershell
 # Required dependencies
-> vcpkg install boost-system
-> vcpkg install boost-filesystem
-> vcpkg install eigen3
-> vcpkg install ccd
-> vcpkg install fcl
-> vcpkg install assimp
+> vcpkg install --recurse --triplet x64-windows assimp boost-system boost-filesystem ccd eigen3 fcl
 
 # Optional dependencies
-> vcpkg install nlopt
-> vcpkg install bullet3
-> vcpkg install ode
-> vcpkg install flann
-> vcpkg install tinyxml2
-> vcpkg install urdfdom
-> vcpkg install opengl
-> vcpkg install freeglut
-> vcpkg install osg
+> vcpkg install --recurse --triplet x64-windowsbullet3 flann freeglut nlopt ode opengl osg tinyxml2 urdfdom
 ```
 
 ### Build and Install DART using CMake
 
-You will also need CMake to create the build environment for your system. Download CMake 3.1.3 or later for your system here:
-
-http://www.cmake.org/cmake/resources/software.html
+You will also need CMake to create the build environment for your system. Download CMake 3.14.3 or later for your system [here](http://www.cmake.org/cmake/resources/software.html).
 
 ### TortoiseGit or SmartGit (optional)
 
@@ -70,7 +54,7 @@ Go to [the tag page](https://github.com/dartsim/dart/tags) and download the sour
 
 Run CMake (cmake-gui). Select the directory where you downloaded DART. Name a directory where you want the Visual Studio project files to be placed. You should probably place it under the DART directory, e. g. `[DART directory]\build`
 
-Click "Configure" and choose your development environment (Visual Studio 15).
+Click "Configure" and choose your development environment (Visual Studio 16).
 
 If you did not install the DART prerequisites in the default install location, you need to change `CMAKE_INSTALL_PREFIX` to your install location and click "Configure" again.
 
