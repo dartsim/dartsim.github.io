@@ -83,13 +83,13 @@ entries:
     #   url: /install_dart_on_debian.html
     #   output: web, pdf
 
-    # - title: Archlinux (experimental)
-    #   url: /install_dart_on_archlinux.html
-    #   output: web, pdf
+    - title: Archlinux (experimental)
+      url: /install_dart_on_archlinux.html
+      output: web, pdf
 
-    # - title: FreeBSD (experimental)
-    #   url: /install_dart_on_freebsd.html
-    #   output: web, pdf
+    - title: FreeBSD (experimental)
+      url: /install_dart_on_freebsd.html
+      output: web, pdf
 
     - title: macOS
       url: /install_dart_on_mac.html
