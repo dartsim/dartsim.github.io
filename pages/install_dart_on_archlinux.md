@@ -1,31 +1,54 @@
 ---
 title: Install DART on Archlinux
 keywords: install, archlinux
-last_updated: Apr 26, 2019
+last_updated: Apr 29, 2019
 sidebar: home_sidebar
 permalink: install_dart_on_archlinux.html
 ---
 
-{% include warning.html content="Installing DART on Archlinux is not tested by the DART developers. Following intstructions are written based on the Archlinux documents. If someone can verify this instructions, then please feel free to submit PRs removing this warning or adding any updates." %}
+{% include warning.html content="Installing DART on Archlinux is not tested by the DART developers." %}
 
-## Install DART using [pacman](https://wiki.archlinux.org/index.php/Pacman)
+## Install DART from the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository)
 
-```
-# pacman -S libdart
-```
+DART is available in the Arch User Repository (AUR) as
+[`libdart`](https://aur.archlinux.org/packages/libdart/).
+
+Note you can manually install the package by following the instructions on the
+[Arch Wiki](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages)
+or use an [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers)
+(recommended for ease of install).
+
+To discuss any issues related to this package refer to the comments section on
+the AUR page of 'libdart' [here](https://aur.archlinux.org/packages/libdart/).
 
 ## Install DART from Source
 
 ### Install Required Dependencies
 
 ```
-# pacman -S assimp boost fcl flann glut libccd libgl octomap urdfdom eigen>=3
+sudo pacman -Sy assimp boost glut libgl eigen
+```
+
+The following required dependencies are not available on the Arch Linux supported
+repositories, however they are available on the AUR or you can install them from
+source.
+
+```
+fcl flann libccd octomap urdfdom
 ```
 
 ### Install Optional Dependencies
 
 ```
-# pacman -S bullet coin-or-ipopt nlopt ode openscenegraph
+sudo pacman -Sy bullet nlopt ode openscenegraph
+```
+
+The following required dependency is not available on the Arch Linux supported
+repositories, however it is available on the AUR or you can install it from
+source.
+
+```
+coin-or-ipopt
 ```
 
 ### Build and Install DART
@@ -97,7 +120,7 @@ permalink: install_dart_on_archlinux.html
 
     The default build type is `Release`.
 
-1.  Install DART:
+5.  Install DART:
 
     ```
     sudo make install
