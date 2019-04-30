@@ -1,12 +1,12 @@
 ---
 title: Install DART on Archlinux
 keywords: install, archlinux
-last_updated: Apr 29, 2019
+last_updated: Apr 30, 2019
 sidebar: home_sidebar
 permalink: install_dart_on_archlinux.html
 ---
 
-{% include warning.html content="Installing DART on Archlinux is not tested by the DART developers." %}
+{% include note.html content="Installing DART on Archlinux is not tested by the DART developers." %}
 
 ## Install DART from the [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository)
 
@@ -19,7 +19,7 @@ or use an [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers)
 (recommended for ease of install).
 
 To discuss any issues related to this package refer to the comments section on
-the AUR page of 'libdart' [here](https://aur.archlinux.org/packages/libdart/).
+the AUR page of `libdart` [here](https://aur.archlinux.org/packages/libdart/).
 
 ## Install DART from Source
 
@@ -29,8 +29,8 @@ the AUR page of 'libdart' [here](https://aur.archlinux.org/packages/libdart/).
 sudo pacman -Sy assimp boost glut libgl eigen
 ```
 
-The following required dependencies are not available on the Arch Linux supported
-repositories, however they are available on the AUR or you can install them from
+The following required dependencies are not available in the Arch Linux supported
+repositories, however they are available in the AUR or you can install them from
 source.
 
 ```
@@ -40,16 +40,20 @@ fcl flann libccd octomap urdfdom
 ### Install Optional Dependencies
 
 ```
-sudo pacman -Sy bullet nlopt ode openscenegraph
+sudo pacman -Sy bullet doxygen nlopt ode openscenegraph
 ```
 
-The following required dependency is not available on the Arch Linux supported
-repositories, however it is available on the AUR or you can install it from
+The following optional dependency is not available in the Arch Linux supported
+repositories, however it is available in the AUR or you can install it from
 source.
 
 ```
 coin-or-ipopt
 ```
+
+`pagmo` is an optional dependency not available in the Arch Linux supported
+repositories or the AUR. Refer to the `pagmo` [installation page](https://esa.github.io/pagmo2/install.html#)
+for installation instructions.
 
 ### Build and Install DART
 
@@ -95,19 +99,19 @@ coin-or-ipopt
       Once you successfully build the tests, you can run all the tests at once as:
 
       ```shell
-      $ make -j4 test  # or cmake -j4
+      make -j4 test  # or cmake -j4
       ```
 
       or run a particular test as:
 
       ```shell
-      $ ./unittests/<category_name>/<test_name>  # e.g., ./unittests/unit/test_Uri
+      ./unittests/<category_name>/<test_name>  # e.g., ./unittests/unit/test_Uri
       ```
 
       Also, you can run tutorials and examples as:
 
       ```shell
-      $ ./bin/<executable_name>  # e.g., ./bin/rigidCubes
+      ./bin/<executable_name>  # e.g., ./bin/rigidCubes
       ```
 
   * Build Type
