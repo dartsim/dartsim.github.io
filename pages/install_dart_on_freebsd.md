@@ -1,26 +1,36 @@
 ---
 title: Install DART on FreeBSD
 keywords: install, freebsd
-last_updated: Apr 26, 2019
+last_updated: Apr 30, 2019
 sidebar: home_sidebar
 permalink: install_dart_on_freebsd.html
 ---
 
-{% include warning.html content="Installing DART on FreeBSD is not tested by the DART developers. Following intstructions are written based on the FreeBSD documents. If someone can verify this instructions, then please feel free to submit PRs removing this warning or adding any updates." %}
+{% include note.html content="Installing DART on FreeBSD is not tested by the DART developers." %}
 
 ## Install DART using [pkg](https://www.freebsd.org/doc/handbook/pkgng-intro.html)
 
 ```
-# pkg install dartsim
+pkg install dartsim
 ```
 
 ## Install DART from Source
 
-### Install Dependencies
+### Install Required Dependencies
 
 ```
-# pkg install assimp boost fcl flann glut libccd libgl octomap urdfdom eigen
+pkg install assimp boost fcl flann glut libccd libgl octomap urdfdom eigen
 ```
+
+### Install Optional Dependencies
+
+```
+pkg install bullet doxygen ipopt nlopt ode
+```
+
+`pagmo` is an optional dependency not available as a FreeBSD Port. Refer to
+the `pagmo` [installation page](https://esa.github.io/pagmo2/install.html#)
+for installation instructions.
 
 ### Build and Install DART
 
@@ -66,19 +76,19 @@ permalink: install_dart_on_freebsd.html
       Once you successfully build the tests, you can run all the tests at once as:
 
       ```shell
-      $ make -j4 test  # or cmake -j4
+      make -j4 test  # or cmake -j4
       ```
 
       or run a particular test as:
 
       ```shell
-      $ ./unittests/<category_name>/<test_name>  # e.g., ./unittests/unit/test_Uri
+      ./unittests/<category_name>/<test_name>  # e.g., ./unittests/unit/test_Uri
       ```
 
       Also, you can run tutorials and examples as:
 
       ```shell
-      $ ./bin/<executable_name>  # e.g., ./bin/rigidCubes
+      ./bin/<executable_name>  # e.g., ./bin/rigidCubes
       ```
 
   * Build Type
@@ -91,7 +101,7 @@ permalink: install_dart_on_freebsd.html
 
     The default build type is `Release`.
 
-1.  Install DART:
+5.  Install DART:
 
     ```
     sudo make install
