@@ -16,21 +16,11 @@ pkg install dartsim
 
 ## Install DART from Source
 
-### Install Required Dependencies
+### Install Dependencies
 
 ```
-pkg install assimp boost fcl flann glut libccd libgl octomap urdfdom eigen
+cd /usr/ports/misc/dartsim && pkg install -A $(make missing) && make install clean
 ```
-
-### Install Optional Dependencies
-
-```
-pkg install bullet doxygen ipopt nlopt ode
-```
-
-`pagmo` is an optional dependency not available as a FreeBSD Port. Refer to
-the `pagmo` [installation page](https://esa.github.io/pagmo2/install.html#)
-for installation instructions.
 
 ### Build and Install DART
 
