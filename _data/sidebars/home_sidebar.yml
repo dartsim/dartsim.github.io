@@ -50,7 +50,7 @@ entries:
     - title: License
       url: /license.html
       output: web, pdf
-      
+
     - title: Citation
       url: /citing.html
       output: web, pdf
@@ -83,11 +83,11 @@ entries:
     #   url: /install_dart_on_debian.html
     #   output: web, pdf
 
-    - title: Archlinux (experimental)
+    - title: Archlinux
       url: /install_dart_on_archlinux.html
       output: web, pdf
 
-    - title: FreeBSD (experimental)
+    - title: FreeBSD
       url: /install_dart_on_freebsd.html
       output: web, pdf
 
