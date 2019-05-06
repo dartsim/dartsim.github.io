@@ -23,8 +23,7 @@ or use an [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers) like
 ### Install Optional Dependencies
 
 ```
-yay -S bullet coin-or-ipopt doxygen flann nlopt octomap ode openscenegraph pagmo
-tinyxml2 urdfdom
+yay -S bullet coin-or-ipopt doxygen flann nlopt octomap ode openscenegraph pagmo tinyxml2 urdfdom
 ```
 
 ### Install DART from AUR
@@ -47,8 +46,7 @@ yay -S assimp boost eigen fcl freeglut libccd libgl
 ### Install Optional Dependencies
 
 ```
-yay -S bullet coin-or-ipopt doxygen flann nlopt octomap ode openscenegraph pagmo
-tinyxml2 urdfdom
+yay -S bullet coin-or-ipopt doxygen flann nlopt octomap ode openscenegraph pagmo tinyxml2 urdfdom
 ```
 
 ### Build and Install DART
