@@ -1,7 +1,7 @@
 ---
 title: Install DART on Archlinux
 keywords: install, archlinux
-last_updated: Apr 30, 2019
+last_updated: May 06, 2019
 sidebar: home_sidebar
 permalink: install_dart_on_archlinux.html
 ---
@@ -15,8 +15,23 @@ DART is available in the Arch User Repository (AUR) as
 
 Note you can manually install the package by following the instructions on the
 [Arch Wiki](https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages)
-or use an [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers)
-(recommended for ease of install).
+or use an [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers) like
+[`yay`](https://aur.archlinux.org/packages/yay/) or
+[`pikaur`](https://aur.archlinux.org/packages/pikaur/)
+(recommended for ease of install). Here we use `yay`.
+
+### Install Optional Dependencies
+
+```
+yay -S bullet coin-or-ipopt doxygen flann nlopt octomap ode openscenegraph pagmo
+tinyxml2 urdfdom
+```
+
+### Install DART from AUR
+
+```
+yay -S libdart
+```
 
 To discuss any issues related to this package refer to the comments section on
 the AUR page of `libdart` [here](https://aur.archlinux.org/packages/libdart/).
@@ -26,34 +41,15 @@ the AUR page of `libdart` [here](https://aur.archlinux.org/packages/libdart/).
 ### Install Required Dependencies
 
 ```
-sudo pacman -Sy assimp boost glut libgl eigen
-```
-
-The following required dependencies are not available in the Arch Linux supported
-repositories, however they are available in the AUR or you can install them from
-source.
-
-```
-fcl flann libccd octomap urdfdom
+yay -S assimp boost eigen fcl freeglut libccd libgl
 ```
 
 ### Install Optional Dependencies
 
 ```
-sudo pacman -Sy bullet doxygen nlopt ode openscenegraph
+yay -S bullet coin-or-ipopt doxygen flann nlopt octomap ode openscenegraph pagmo
+tinyxml2 urdfdom
 ```
-
-The following optional dependency is not available in the Arch Linux supported
-repositories, however it is available in the AUR or you can install it from
-source.
-
-```
-coin-or-ipopt
-```
-
-`pagmo` is an optional dependency not available in the Arch Linux supported
-repositories or the AUR. Refer to the `pagmo` [installation page](https://esa.github.io/pagmo2/install.html#)
-for installation instructions.
 
 ### Build and Install DART
 
