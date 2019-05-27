@@ -1,0 +1,36 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: dartpy Examples
+#  version: 6.1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage
+      output: pdf
+      type: frontmatter
+
+  - title: Examples
+    output: web, pdf
+    folderitems:
+
+    - title: Introduction
+      url: /dartpy_examples_introduction.html
+      output: web, pdf
+
+    - title: Rigid Cubes
+      url: /dartpy_examples_rigid_cubes.html
+      output: web, pdf
+
+    - title: Operational Space Control
+      url: /dartpy_examples_operational_space_control.html
+      output: web, pdf

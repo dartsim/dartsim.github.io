@@ -71,7 +71,7 @@ entries:
       external_url: https://www.youtube.com/channel/UC_YYNVv9bdEolIpkai10_Lg
       output: web, pdf
 
-  - title: Installation
+  - title: Installation (C++)
     output: web, pdf
     folderitems:
 
@@ -99,16 +99,28 @@ entries:
       url: /install_dart_on_windows.html
       output: web, pdf
 
+  - title: Installation (Python)
+    output: web, pdf
+    folderitems:
+
+      - title: Ubuntu
+        url: /install_dartpy_on_ubuntu.html
+        output: web, pdf
+
   - title: Documentation
     output: web, pdf
     folderitems:
 
-    - title: Tutorials
+    - title: Tutorials (C++)
       url: /tutorials_introduction.html
       output: web, pdf
 
-    - title: API Documentation
+    - title: API Documentation (C++)
       external_url: https://dartsim.github.io/dart/
+      output: web, pdf
+
+    - title: Examples (Python)
+      external_url: /dartpy_examples_introduction.html
       output: web, pdf
 
     - title: FAQ
@@ -118,4 +130,3 @@ entries:
     - title: SKEL File Format Specification
       url: /skel_file_format.html
       output: web, pdf
-

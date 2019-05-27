@@ -8,8 +8,12 @@ topnav:
       url: /news
 - title: Topnav
   items:
-    - title: Tutorials
+    - title: Tutorials (C++)
       url: /tutorials_introduction.html
+- title: Topnav
+  items:
+    - title: Examples (Python)
+      url: /dartpy_examples_introduction.html
 - title: Topnav
   items:
     - title: Forum

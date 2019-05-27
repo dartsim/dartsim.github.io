@@ -94,6 +94,7 @@ sidebars:
 - home_sidebar
 - mydoc_sidebar
 - tutorials_sidebar
+- dartpy_examples_sidebar
 - product1_sidebar
 - product2_sidebar
 - other

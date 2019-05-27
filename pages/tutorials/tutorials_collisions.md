@@ -149,7 +149,7 @@ template argument specifies the type of Joint that you want to create. In our
 case, the type of Joint we want to create is actually a template argument of
 our current function, so we just pass that argument along. The second template
 argument of ``createJointAndBodyNodePair`` allows us to specify the BodyNode
-type that we want to create, but the default argument is a standard rigid 
+type that we want to create, but the default argument is a standard rigid
 BodyNode, so we can leave the second argument blank.
 
 ```cpp
@@ -171,10 +171,10 @@ Now notice the very last thing on this line of code:
 ```
 
 The function actually returns a ``std::pair`` of pointers to the new Joint and
-new BodyNode that were just created, but we only care about grabbing the 
+new BodyNode that were just created, but we only care about grabbing the
 BodyNode once the function is finished, so we can append ``.second`` to the end
-of the line so that we just grab the BodyNode pointer and ignore the Joint 
-pointer. The joint will of course still be created; we just have no need to 
+of the line so that we just grab the BodyNode pointer and ignore the Joint
+pointer. The joint will of course still be created; we just have no need to
 access it at this point.
 
 ### Lesson 1c: Make a shape for the body
@@ -182,7 +182,7 @@ access it at this point.
 We'll take advantage of the Shape::ShapeType enumeration to specify what kind of
 Shape we want to produce for the body. In particular, we'll allow the user to
 specify three types of Shapes: ``Shape::BOX``, ``Shape::CYLINDER``, and
-``Shape::ELLIPSOID``. 
+``Shape::ELLIPSOID``.
 
 ```cpp
 ShapePtr shape;
@@ -387,7 +387,7 @@ soft_properties.mDampCoeff = default_soft_damping;
 ### Lesson 2c: Create the Joint and Soft Body pair
 
 This step is very similar to Lesson 1b, except now we'll want to specify
-that we're creating a soft BodyNode. First, let's create a full 
+that we're creating a soft BodyNode. First, let's create a full
 ``SoftBodyNode::Properties``:
 
 ```cpp
@@ -550,7 +550,7 @@ if(mRandomize)
   positions[4] = default_spawn_range * mDistribution(mMT);
 ```
 
-``mDistribution(mMT)`` will generate a random value in the range \[-1, 1\] 
+``mDistribution(mMT)`` will generate a random value in the range \[-1, 1\]
 inclusive because of how we initialized the classes in the constructor of
 ``MyWindow``.
 
@@ -587,7 +587,7 @@ mWorld->addSkeleton(object);
 ### Lesson 3c: Compute collisions
 
 Now that we've added the Skeleton to the world, we want to make sure that it
-wasn't actually placed inside of something accidentally. If an object in a 
+wasn't actually placed inside of something accidentally. If an object in a
 simulation starts off inside of another object, it can result in extremely
 non-physical simulations, perhaps even breaking the simulation entirely.
 We can access the world's collision detector directly to check make sure the
@@ -852,29 +852,3 @@ And that's it! You're ready to run the full tutorialCollisions application!
 **When running the application, keep in mind that the dynamics of collisions are
 finnicky, so you may see some unstable and even completely non-physical behavior.
 If the application freezes, you may need to force quit out of it.**
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div class="fb-like" data-href="http://dart.readthedocs.org/en/release-5.1/tutorials/collisions/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'dartsim';
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-

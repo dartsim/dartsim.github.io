@@ -99,7 +99,7 @@ use the ``Skeleton::setPositions`` function to set it.
 
 Similar to **Lesson 3** of the **Collisions** tutorial, we'll want to make sure
 that the newly inserted Skeleton is not starting out in collision with anything,
-because this could make for a very ugly (perhaps even broken) simulation. 
+because this could make for a very ugly (perhaps even broken) simulation.
 
 First, we get the CollisionGroup with the ShapeFrames of the things in the world
 
@@ -110,7 +110,7 @@ auto collisionGroup = mWorld->getConstraintSolver()->getCollisionGroup();
 Then we'll create a second CollisionGroup which only contains the new domino.
 
 ```cpp
-auto collisionEngine = mWorld->getConstraintSolver()->getCollisionDetector();    
+auto collisionEngine = mWorld->getConstraintSolver()->getCollisionDetector();
 auto newGroup = collisionEngine->createCollisionGroup(newDomino.get());
 ```
 
@@ -264,7 +264,7 @@ although all it will be able to do is collapse pitifully onto the floor.**
 
 To make the manipulator actually useful, we'll want to have the ``Controller``
 control its joint forces. For it to do that, the ``Controller`` class will need
-to be informed of what we want the manipulator's joint angles to be. This is 
+to be informed of what we want the manipulator's joint angles to be. This is
 easily done in the constructor of the ``Controller`` class:
 
 ```cpp
@@ -529,29 +529,3 @@ mManipulator->setForces(mForces);
 ```
 
 **Now you're ready to try out the full dominoes app!**
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div class="fb-like" data-href="http://dart.readthedocs.org/en/release-5.1/tutorials/dominoes/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'dartsim';
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-

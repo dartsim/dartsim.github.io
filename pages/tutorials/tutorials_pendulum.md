@@ -38,9 +38,9 @@ skeleton named *pendulum*.
 SkeletonPtr pendulum = Skeleton::create("pendulum");
 ```
 
-A Skeleton is a structure that consists of ``BodyNode``s (bodies) which are 
-connected by ``Joint``s. Every Joint has a child BodyNode, and every BodyNode 
-has a parent Joint. Even the root BodyNode has a Joint that attaches it to the 
+A Skeleton is a structure that consists of ``BodyNode``s (bodies) which are
+connected by ``Joint``s. Every Joint has a child BodyNode, and every BodyNode
+has a parent Joint. Even the root BodyNode has a Joint that attaches it to the
 World. In the function ``makeRootBody``, we create a pair of a
 ``BallJoint``  and a BodyNode, and attach this pair to the currently
 empty pendulum skeleton.
@@ -145,7 +145,7 @@ There are two ways that forces can be applied:
 - As an external body force
 
 First we'll consider applying a Joint force. Inside the for-loop that goes
-through each ``DegreeOfFreedom`` using ``getNumDofs()``, there is an 
+through each ``DegreeOfFreedom`` using ``getNumDofs()``, there is an
 if-statement for ``mForceCountDown``. In that if-statement, we'll grab the
 relevant DegreeOfFreedom and set its generalized (joint) force:
 
@@ -390,29 +390,3 @@ mBallConstraint = nullptr;
 Setting mBallConstraint to a nullptr will allow its smart pointer to delete it.
 
 **Now you are ready to run the demo!**
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div class="fb-like" data-href="http://dart.readthedocs.org/en/release-5.1/tutorials/multi-pendulum/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'dartsim';
-    
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
