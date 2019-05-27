@@ -107,6 +107,10 @@ entries:
         url: /install_dartpy_on_ubuntu.html
         output: web, pdf
 
+      - title: macOS
+        url: /install_dartpy_on_macos.html
+        output: web, pdf
+
   - title: Documentation
     output: web, pdf
     folderitems:

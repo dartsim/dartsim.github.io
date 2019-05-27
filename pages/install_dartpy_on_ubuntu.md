@@ -6,6 +6,35 @@ permalink: install_dartpy_on_ubuntu.html
 toc: false
 ---
 
+## Install dartpy using pip3
+
+```
+# Required dependencies
+sudo apt-get install build-essential cmake pkg-config git
+sudo apt-get install libeigen3-dev libassimp-dev libccd-dev libfcl-dev libboost-regex-dev libboost-system-dev
+sudo apt-get install libtinyxml2-dev liburdfdom-dev
+sudo apt-get install libxi-dev libxmu-dev freeglut3-dev libopenscenegraph-dev
+
+# Optional dependencies
+sudo apt-get install libbullet-dev libode-dev liboctomap-dev
+# Ubuntu 16.04 and 18.04
+sudo apt-get install libnlopt-dev
+# Ubuntu 18.10 and later
+sudo apt-get install libnlopt-cxx-dev
+
+# This can take several minutes to build dartpy from source
+pip3 install dartpy
+```
+
+Once installed, you can simply test if dartpy is successfully installed by running:
+
+```python
+$ python3
+>>> import dartpy as dart
+>>> world = dart.simulation.World()
+>>> world.step()
+```
+
 ## Install dartpy using apt
 
 ### On Ubuntu 19.04, 19.10
@@ -14,7 +43,6 @@ In Ubuntu 19.04 and 19.10, dartpy can be installed using apt for both of Python 
 
 ```
 sudo apt-add-repository ppa:dartsim/ppa
-sudo apt update                  # not necessary since Bionic
 sudo apt install python-dartpy   # for Python 2
 sudo apt install python3-dartpy  # for Python 3
 ```
