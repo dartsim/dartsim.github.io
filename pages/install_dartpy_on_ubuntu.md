@@ -8,12 +8,25 @@ toc: false
 
 ## Install dartpy using pip3
 
+### Dependencies
+
 ```
 # Required dependencies
 sudo apt-get install build-essential cmake pkg-config git
 sudo apt-get install libeigen3-dev libassimp-dev libccd-dev libfcl-dev libboost-regex-dev libboost-system-dev
 sudo apt-get install libtinyxml2-dev liburdfdom-dev
 sudo apt-get install libxi-dev libxmu-dev freeglut3-dev libopenscenegraph-dev
+sudo apt-get install python3-pip
+# Ubuntu 18.10 and older
+git clone https://github.com/pybind/pybind11 -b 'v2.2.4' --single-branch --depth 1
+cd pybind11
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DPYBIND11_TEST=OFF
+make -j4
+sudo make install
+# Ubuntu 19.04 and newer
+sudo apt-get install pybind11-dev
 
 # Optional dependencies
 sudo apt-get install libbullet-dev libode-dev liboctomap-dev
@@ -21,7 +34,11 @@ sudo apt-get install libbullet-dev libode-dev liboctomap-dev
 sudo apt-get install libnlopt-dev
 # Ubuntu 18.10 and later
 sudo apt-get install libnlopt-cxx-dev
+```
 
+### dartpy
+
+```
 # This can take several minutes to build dartpy from source
 pip3 install dartpy
 ```
@@ -58,37 +75,33 @@ $ python3
 
 ## Install dartpy from Source
 
-### Install Required Dependencies
+### Dependencies
 
 ```
+# Required dependencies
 sudo apt-get install build-essential cmake pkg-config git
 sudo apt-get install libeigen3-dev libassimp-dev libccd-dev libfcl-dev libboost-regex-dev libboost-system-dev
 sudo apt-get install libtinyxml2-dev liburdfdom-dev
 sudo apt-get install libxi-dev libxmu-dev freeglut3-dev libopenscenegraph-dev
+sudo apt-get install python3-pip
+# Ubuntu 18.10 and older
+git clone https://github.com/pybind/pybind11 -b 'v2.2.4' --single-branch --depth 1
+cd pybind11
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DPYBIND11_TEST=OFF
+make -j4
+sudo make install
+# Ubuntu 19.04 and newer
+sudo apt-get install pybind11-dev
+
+# Optional dependencies
+sudo apt-get install libbullet-dev libode-dev liboctomap-dev
 # Ubuntu 16.04 and 18.04
 sudo apt-get install libnlopt-dev
 # Ubuntu 18.10 and later
 sudo apt-get install libnlopt-cxx-dev
 ```
-
-### Install Optional Dependencies
-
-* Bullet Collision Detector Support
-
-  ```
-  sudo apt-get install libbullet-dev
-  ```
-
-* ODE Collision Detector Support
-
-  ```
-  sudo apt-get install libode-dev
-  ```
-
-* VoxelGridShape
-  ```
-  sudo apt-get install liboctomap-dev
-  ```
 
 ### Build and Install dartpy
 
