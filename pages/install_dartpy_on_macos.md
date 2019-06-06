@@ -43,28 +43,21 @@ brew install pybind11
     git clone git://github.com/dartsim/dart.git
     ```
 
-2.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.9.0`:
-
-    ```
-    cd dart
-    git checkout tags/v6.9.0
-    ```
-
-3.  Create a build directory:
+2.  Create a build directory:
 
     ```
     mkdir build
     cd build
     ```
 
-4.  Configure and build DART:
+3.  Configure and build DART:
 
     ```
     cmake .. -DDART_BUILD_DARTPY=ON -DCMAKE_INSTALL_PREFIX=/usr/ -DCMAKE_BUILD_TYPE=Release
     make -j4 dartpy
     ```
 
-5.  Install dartpy:
+4.  Install dartpy:
 
     ```
     sudo make install
@@ -75,4 +68,3 @@ brew install pybind11
     ```
     sudo make uninstall
     ```
-
