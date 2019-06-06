@@ -43,6 +43,8 @@ sudo apt-get install libnlopt-cxx-dev
 pip3 install dartpy
 ```
 
+{% include warning.html content="Known issues: (1) Pip install of dartpy on Anaconda environment does't work; import error. (2) Uninstalling pip-installed dartpy doesn't completely remove dartpy.so, and this leads to incorrect re-installing." %}
+
 Once installed, you can simply test if dartpy is successfully installed by running:
 
 ```python
