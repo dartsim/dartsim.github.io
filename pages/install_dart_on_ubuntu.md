@@ -33,10 +33,10 @@ sudo apt-get update  # not necessary since Bionic
 
 * Install optional components
 
-  e.g., installing planning component:
+  e.g., installing collision-bullet component:
 
   ```
-  sudo apt-get install libdart6-planning-dev
+  sudo apt-get install libdart6-collision-bullet-dev
   ```
 
 * Install everything
@@ -105,7 +105,7 @@ sudo apt-get install libopenscenegraph-dev
   ```
 
 * DART Planning Module
-
+  {% include warning.html content="The DART planning module is deprecated." %}
   ```
   sudo apt-get install libflann-dev
   ```
