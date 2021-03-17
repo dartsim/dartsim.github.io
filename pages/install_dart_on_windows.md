@@ -27,7 +27,7 @@ Please find vcpkg installation instruction from the [website](https://vcpkg.read
 > vcpkg install --recurse --triplet x64-windows assimp boost-system boost-filesystem ccd eigen3 fcl
 
 # Optional dependencies
-> vcpkg install --recurse --triplet x64-windowsbullet3 flann freeglut nlopt ode opengl osg tinyxml2 urdfdom
+> vcpkg install --recurse --triplet x64-windows bullet3 flann freeglut nlopt ode opengl osg tinyxml2 urdfdom
 ```
 
 ### Build and Install DART using CMake
