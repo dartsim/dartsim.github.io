@@ -1,6 +1,6 @@
 ---
 title: Project Status
-last_updated: Oct 11, 2016
+last_updated: Jul 11, 2021
 keywords: 
 sidebar: home_sidebar
 permalink: project_status.html
@@ -17,10 +17,10 @@ toc: false
 
 ## Project Statistics
 
-| Measurement            | v2.6 | v3.0 | v4.3 | v5.1 | v6.8 |
-| ---------------------- | ---- | ---- | ---- | ---- | ---- |
-| Lines of code          |  26k |  24k |  39k |  58k |  78k |
-| Lines of comments      |  10k |  10k |  18k |  26k |  37k |
-| Test function coverage |   -  |   -  |   -  |   -  |  56% |
+| Measurement            | v2.6 | v3.0 | v4.3 | v5.1 | v6.8 | v6.9 | v6.10 |
+| ---------------------- | ---- | ---- | ---- | ---- | ---- | ---- | ----- |
+| Lines of code          |  26k |  24k |  39k |  58k |  78k |  79k |  89k  |
+| Lines of comments      |  10k |  10k |  18k |  26k |  37k |  38k |  41k  |
+| Test function coverage |   -  |   -  |   -  |   -  |  56% |  57%  |   -   |
 
 * Measured using [cloc](http://cloc.sourceforge.net/): `cloc dart --fullpath --not-match-d=dart/external`
