@@ -118,10 +118,10 @@ sudo apt-get install libnlopt-cxx-dev
 1.  Clone the repository into a directory in your home folder:
 
     ```
-    git clone git://github.com/dartsim/dart.git
+    git clone https://github.com/dartsim/dart.git
     ```
 
-2.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.11.1`:
+2.  Change directory to the DART repository and checkout the [latest release](https://github.com/dartsim/dart/releases) of DART 6, (e.g., `v6.11.1`):
 
     ```
     cd dart
