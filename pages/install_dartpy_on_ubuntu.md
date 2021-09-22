@@ -17,6 +17,7 @@ sudo apt-get install libeigen3-dev libassimp-dev libccd-dev libfcl-dev libboost-
 sudo apt-get install libtinyxml2-dev liburdfdom-dev
 sudo apt-get install libxi-dev libxmu-dev freeglut3-dev libopenscenegraph-dev
 sudo apt-get install python3-pip
+
 # Ubuntu 18.10 and older
 git clone https://github.com/pybind/pybind11 -b 'v2.2.4' --single-branch --depth 1
 cd pybind11
@@ -25,13 +26,16 @@ cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release -DPYBIND11_TEST=OFF
 make -j4
 sudo make install
+
 # Ubuntu 19.04 and newer
 sudo apt-get install pybind11-dev
 
 # Optional dependencies
 sudo apt-get install libbullet-dev libode-dev liboctomap-dev
+
 # Ubuntu 16.04 and 18.04
 sudo apt-get install libnlopt-dev
+
 # Ubuntu 18.10 and later
 sudo apt-get install libnlopt-cxx-dev
 ```
@@ -86,6 +90,7 @@ sudo apt-get install libeigen3-dev libassimp-dev libccd-dev libfcl-dev libboost-
 sudo apt-get install libtinyxml2-dev liburdfdom-dev
 sudo apt-get install libxi-dev libxmu-dev freeglut3-dev libopenscenegraph-dev
 sudo apt-get install python3-pip
+
 # Ubuntu 18.10 and older
 git clone https://github.com/pybind/pybind11 -b 'v2.2.4' --single-branch --depth 1
 cd pybind11
@@ -94,13 +99,16 @@ cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release -DPYBIND11_TEST=OFF
 make -j4
 sudo make install
+
 # Ubuntu 19.04 and newer
 sudo apt-get install pybind11-dev
 
 # Optional dependencies
 sudo apt-get install libbullet-dev libode-dev liboctomap-dev
+
 # Ubuntu 16.04 and 18.04
 sudo apt-get install libnlopt-dev
+
 # Ubuntu 18.10 and later
 sudo apt-get install libnlopt-cxx-dev
 ```
@@ -113,11 +121,11 @@ sudo apt-get install libnlopt-cxx-dev
     git clone git://github.com/dartsim/dart.git
     ```
 
-2.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.9.0`:
+2.  Change directory to the DART repository and checkout the latest tag of DART 6, `v6.11.1`:
 
     ```
     cd dart
-    git checkout tags/v6.9.0
+    git checkout tags/v6.11.1
     ```
 
 3.  Create a build directory:
@@ -130,19 +138,12 @@ sudo apt-get install libnlopt-cxx-dev
 4.  Configure and build DART:
 
     ```
-    cmake .. -DDART_BUILD_DARTPY=ON -DCMAKE_INSTALL_PREFIX=/usr/ -DCMAKE_BUILD_TYPE=Release
+    cmake .. -DCMAKE_INSTALL_PREFIX=/usr/ -DCMAKE_BUILD_TYPE=Release
     make -j4 dartpy
     ```
 
 5.  Install dartpy:
 
     ```
-    sudo make install
+    sudo make install-dartpy
     ```
-
-    If you want to uninstall dartpy, run:
-
-    ```
-    sudo make uninstall
-    ```
-
