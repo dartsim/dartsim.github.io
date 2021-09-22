@@ -42,31 +42,32 @@ brew install pybind11
 1.  Clone the repository into a directory in your home folder:
 
     ```
-    git clone git://github.com/dartsim/dart.git
+    git clone https://github.com/dartsim/dart.git
     ```
 
-2.  Create a build directory:
+2.  Change directory to the DART repository and checkout the [latest release](https://github.com/dartsim/dart/releases) of DART 6 (e.g., v6.11.1):
+
+    ```
+    cd dart
+    git checkout tags/v6.11.1
+    ```
+
+3.  Create a build directory:
 
     ```
     mkdir build
     cd build
     ```
 
-3.  Configure and build DART:
+4.  Configure and build DART:
 
     ```
-    cmake .. -DDART_BUILD_DARTPY=ON -DCMAKE_INSTALL_PREFIX=/usr/ -DCMAKE_BUILD_TYPE=Release
+    cmake .. -DCMAKE_INSTALL_PREFIX=/usr/ -DCMAKE_BUILD_TYPE=Release
     make -j4 dartpy
     ```
 
-4.  Install dartpy:
+5.  Install dartpy:
 
     ```
-    sudo make install
-    ```
-
-    If you want to uninstall dartpy, run:
-
-    ```
-    sudo make uninstall
+    sudo make install-dartpy
     ```
