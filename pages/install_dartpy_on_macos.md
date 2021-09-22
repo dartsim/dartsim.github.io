@@ -62,7 +62,7 @@ brew install pybind11
 4.  Configure and build DART:
 
     ```
-    cmake .. -DCMAKE_INSTALL_PREFIX=/usr/ -DCMAKE_BUILD_TYPE=Release
+    cmake .. -DCMAKE_INSTALL_PREFIX=/usr/ -DCMAKE_BUILD_TYPE=Release -DDART_BUILD_DARTPY=ON
     make -j4 dartpy
     ```
 
