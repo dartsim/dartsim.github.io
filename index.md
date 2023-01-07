@@ -22,35 +22,34 @@ In summary, DART has applications in robotics and computer animation as it featu
 
 ### General
 
-* Open source under BSD license written in C++.
-* Support multiple platforms: Ubuntu, Archlinux, FreeBSD, macOS, and Windows.
+* Open-source C++ library licensed under the BSD license.
+* Supports multiple platforms including Ubuntu, Archlinux, FreeBSD, macOS, and Windows.
 * Fully integrated with Gazebo.
-* Support models described in URDF and SDF formats.
-* Provide default integration methods, semi-implicit Euler and RK4, as well as extensible
-* API for other numerical integration methods.
-* Support lazy evaluation and automatic update of kinematic and dynamic quantities.
-* Provide extensible API for embedding user-provided classes into DART data structures.
-* Support comprehensive recording of events in simulation history.
-* Provide 3D visualization API using OpenGL and OpenSceneGraph with ImGui support.
-* Provide extensible API to interface with various optimization problems such as nonlinear programming and multi-objective optimization.
+* Supports models in URDF and SDF formats.
+* Provides default integration methods (semi-implicit Euler and RK4) and an extensible API for other numerical integration methods.
+* Supports lazy evaluation and automatic updates of kinematic and dynamic quantities.
+* Allows for the extension of the API to embed user-provided classes into its data structures.
+* Provides comprehensive event recording in the simulation history.
+* 3D visualization API using OpenGL and OpenSceneGraph with ImGui support.
+* Extensible API to interface with various optimization problems, such as nonlinear programming and multi-objective optimization.
 
 ### Collision Detection
 
-* Support multiple collision detectors: FCL, Bullet, and ODE.
-* Support various collision shapes including primitive shapes, concave mesh, and probablistic voxel grid.
-* Support minimum distance computation.
+* Support for multiple collision detectors: FCL, Bullet, and ODE.
+* Support for various collision shapes including primitive shapes, concave mesh, and probabilistic voxel grid.
+* Support for minimum distance computation.
 
 ### Kinematics
 
-* Support numerous types of Joint.
-* Support numerous primitive and arbitrary body shapes with customizable inertial and material properties.
-* Support flexible skeleton modeling: cloning and reconfiguring skeletons or subsections of a skeleton.
-* Provide comprehensive access to kinematic states (e.g. transformation, position, velocity, or acceleration) of arbitrary entity and coordinate frames
-* Provide comprehensive access to various Jacobian matrices and their derivatives.
-* Support flexible conversion of coordinate frames.
-* A fully modular inverses kinematics framework.
-* A plug-and-play hierarchical whole-body inverse kinematics solver.
-* Provide analytic inverse kinematics interface with ikfast support.
+* Support for numerous types of Joints.
+* Support for numerous primitive and arbitrary body shapes with customizable inertial and material properties.
+* Support for flexible skeleton modeling, including cloning and reconfiguring skeletons or subsections of a skeleton.
+* Comprehensive access to kinematic states (e.g. transformation, position, velocity, or acceleration) of arbitrary entities and coordinate frames.
+* Comprehensive access to various Jacobian matrices and their derivatives.
+* Flexible conversion of coordinate frames.
+* Fully modular inverse kinematics framework.
+* Plug-and-play hierarchical whole-body inverse kinematics solver.
+* Analytic inverse kinematics interface with ikfast support.
 
 ### Dynamics
 
@@ -65,3 +64,16 @@ In summary, DART has applications in robotics and computer animation as it featu
 * Support various Cartesian constraints and provide extensible API for user-defined constraints.
 * Provide multiple constraint solvers: Lemke method, Dantzig method, and PSG method.
 * Support dynamic systems with closed-loop structures.
+
+* High performance for articulated dynamic systems using Lie Group representation and Featherstone hybrid algorithms.
+* Exact enforcement of joints between body nodes using generalized coordinates.
+* Comprehensive API for dynamic quantities and their derivatives, such as the mass matrix, Coriolis force, gravitational force, and other external and internal forces.
+* Support for both rigid and soft body nodes.
+* Modeling of viscoelastic joint dynamics with joint friction and hard joint limits.
+* Support for various types of actuators.
+* Handling of contacts and collisions using an implicit LCP to guarantee non-penetration, directional friction, and approximated Coulomb friction cone conditions.
+* Use of the "Island" technique to subdivide constraint handling for efficient performance.
+* Support for various Cartesian constraints and extensible API for user-defined constraints.
+* Multiple constraint solvers: Lemke method, Dantzig method, and PSG method.
+* Support for dynamic systems with closed-loop structures.
+
