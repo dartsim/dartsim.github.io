@@ -53,18 +53,6 @@ In summary, DART has applications in robotics and computer animation as it featu
 
 ### Dynamics
 
-* Achieve high performance for articulated dynamic systems using Lie Group representation and Featherstone hybrid algorithms.
-* Enforce joints between body nodes exactly using generalized coordinates.
-* Provide comprehensive API for dynamic quantities and their derivatives, such as mass matrix, Coriolis force, gravitational force, other external and internal forces.
-* Support both rigid and soft body nodes.
-* Model viscoelastic joint dynamics with joint friction and hard joint limits.
-* Support various types of actuators.
-* Handle contacts and collisions using an implicit LCP to guarantee non-penetration, directional friction, and approximated Coulomb friction cone conditions.
-* Support ”Island” technique to subdivide constraint handling for efficient performance.
-* Support various Cartesian constraints and provide extensible API for user-defined constraints.
-* Provide multiple constraint solvers: Lemke method, Dantzig method, and PSG method.
-* Support dynamic systems with closed-loop structures.
-
 * High performance for articulated dynamic systems using Lie Group representation and Featherstone hybrid algorithms.
 * Exact enforcement of joints between body nodes using generalized coordinates.
 * Comprehensive API for dynamic quantities and their derivatives, such as the mass matrix, Coriolis force, gravitational force, and other external and internal forces.
