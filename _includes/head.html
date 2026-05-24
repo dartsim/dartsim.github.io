@@ -4,6 +4,10 @@
 <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
 <meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}">
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.site_title }}</title>
+{% if page.redirect_to %}
+<link rel="canonical" href="{{ page.redirect_to | escape }}">
+<meta http-equiv="refresh" content="0; url={{ page.redirect_to | escape }}">
+{% endif %}
 <link rel="stylesheet" href="{{ "css/syntax.css" }}">
 
 
