@@ -28,7 +28,7 @@ topnav_dropdowns:
         - title: View DART on Github
           external_url: https://github.com/dartsim/dart
         - title: CI Dashboard
-          external_url: https://dartsim.github.io/ci-dashboard/
+          external_url: https://dartsim.github.io/ci-status/
         - title: Report DART Issue
           external_url: https://github.com/dartsim/dart/issues
 #         - title: View DART Website on Github
