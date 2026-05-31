@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DART CI Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">dartsim/dart</p>
+        <h1>CI Dashboard</h1>
+      </div>
+      <div class="header-actions">
+        <a class="button" href="https://github.com/dartsim/dart/actions">Actions</a>
+        <a class="button" href="https://github.com/dartsim/dart">Repository</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="status-strip" id="summary">
+        <div class="loading">Loading dashboard data...</div>
+      </section>
+
+      <section id="warnings" class="section"></section>
+
+      <section class="section">
+        <div class="section-heading">
+          <h2>Runner Pools</h2>
+          <p>Exact self-hosted status, plus inferred GitHub-hosted pressure.</p>
+        </div>
+        <div id="runner-pools" class="grid"></div>
+      </section>
+
+      <section class="section two-column">
+        <div>
+          <div class="section-heading">
+            <h2>Queued Jobs</h2>
+            <p>Longest waits first.</p>
+          </div>
+          <div id="queued-jobs" class="table-wrap"></div>
+        </div>
+        <div>
+          <div class="section-heading">
+            <h2>In Progress</h2>
+            <p>Longest running first.</p>
+          </div>
+          <div id="in-progress-jobs" class="table-wrap"></div>
+        </div>
+      </section>
+
+      <section class="section two-column">
+        <div>
+          <div class="section-heading">
+            <h2>CUDA / GPU</h2>
+            <p>Recent GPU-labeled and CUDA-named jobs.</p>
+          </div>
+          <div id="gpu-jobs" class="table-wrap"></div>
+        </div>
+        <div>
+          <div class="section-heading">
+            <h2>Recent Outcomes</h2>
+            <p>Latest completed jobs in the sample window.</p>
+          </div>
+          <div id="recent-jobs" class="table-wrap"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span id="generated-at">Generated time unavailable</span>
+      <span>GitHub-hosted capacity is inferred from job state.</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
