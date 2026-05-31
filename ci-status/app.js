@@ -1,4 +1,4 @@
-const statusUrl = "data/status.json";
+const statusUrl = document.currentScript?.dataset.statusUrl || "data/status.json";
 
 function formatDuration(seconds) {
   if (seconds === null || seconds === undefined) return "-";
@@ -168,6 +168,25 @@ async function load() {
 
     document.getElementById("generated-at").textContent = `Generated ${data.generated_at}`;
   } catch (error) {
+    if (statusUrl !== "data/status.json") {
+      try {
+        const response = await fetch(`data/status.json?t=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        renderSummary(data);
+        renderWarnings(data);
+        renderRunnerPools(data);
+        renderJobs("queued-jobs", data.jobs?.queued, { empty: "No queued jobs." });
+        renderJobs("in-progress-jobs", data.jobs?.in_progress, { empty: "No in-progress jobs." });
+        renderJobs("gpu-jobs", data.jobs?.latest_gpu, { empty: "No recent CUDA/GPU jobs in the sample." });
+        renderJobs("recent-jobs", data.jobs?.recent_completed, { empty: "No completed jobs in the sample." });
+        document.getElementById("generated-at").textContent = `Generated ${data.generated_at}`;
+        return;
+      } catch (fallbackError) {
+        document.getElementById("summary").innerHTML = `<div class="error">Failed to load dashboard data: ${escapeHtml(error.message)}; fallback failed: ${escapeHtml(fallbackError.message)}</div>`;
+        return;
+      }
+    }
     document.getElementById("summary").innerHTML = `<div class="error">Failed to load dashboard data: ${escapeHtml(error.message)}</div>`;
   }
 }
