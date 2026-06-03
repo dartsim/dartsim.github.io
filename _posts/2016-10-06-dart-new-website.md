@@ -1,4 +1,5 @@
 ---
+redirect_to: https://github.com/dartsim/dart/discussions/categories/announcements
 title:  "We are happy to announce the launch of our brand new website!"
 categories: dart update
 sidebar: news_sidebar
