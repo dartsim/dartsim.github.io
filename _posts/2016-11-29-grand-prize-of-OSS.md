@@ -1,4 +1,5 @@
 ---
+redirect_to: https://github.com/dartsim/dart/discussions/categories/announcements
 title:  "DART won the Grand Prize of the Open Source Software World Challenge 2016!"
 categories: dart update
 sidebar: news_sidebar

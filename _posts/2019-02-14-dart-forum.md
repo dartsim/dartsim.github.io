@@ -1,4 +1,5 @@
 ---
+redirect_to: https://github.com/dartsim/dart/discussions/categories/announcements
 title:  "DART Forum"
 categories: dart update
 sidebar: news_sidebar

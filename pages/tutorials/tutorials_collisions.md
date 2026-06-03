@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/tutorials/index.html
 title: Collisions
 keywords: sample
 sidebar: tutorials_sidebar

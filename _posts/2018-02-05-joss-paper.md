@@ -1,4 +1,5 @@
 ---
+redirect_to: https://github.com/dartsim/dart/discussions/categories/announcements
 title:  "DART got accepted to the Journal of Open Source Software"
 categories: dart update
 sidebar: news_sidebar
