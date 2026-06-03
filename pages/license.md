@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/license.html
 title: DART License
 sidebar: home_sidebar
 permalink: license.html

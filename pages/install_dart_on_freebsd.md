@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/dart/user_guide/installation.html
 title: Install DART on FreeBSD
 keywords: install, freebsd
 last_updated: Apr 30, 2019

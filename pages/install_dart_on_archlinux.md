@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/dart/user_guide/installation.html
 title: Install DART on Archlinux
 keywords: install, archlinux
 last_updated: May 06, 2019

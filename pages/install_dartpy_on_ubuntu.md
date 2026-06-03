@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/dartpy/user_guide/installation.html
 title: Install dartpy on Ubuntu
 keywords:
 sidebar: home_sidebar

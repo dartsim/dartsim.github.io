@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/dart/user_guide/installation.html
 title: Install DART on Debian
 keywords: install, debian
 last_updated: Apr 26, 2019

@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/dartpy/user_guide/examples.html
 title: Rigid Cubes
 keywords: examples
 sidebar: dartpy_examples_sidebar

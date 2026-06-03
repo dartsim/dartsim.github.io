@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/dart/user_guide/installation.html
 title: Install DART on Ubuntu
 keywords: install, ubuntu
 last_updated: Jan 10, 2019

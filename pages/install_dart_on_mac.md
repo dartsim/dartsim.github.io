@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/dart/user_guide/installation.html
 title: Install DART on Mac
 keywords: install, mac
 last_updated: Apr 26, 2019
