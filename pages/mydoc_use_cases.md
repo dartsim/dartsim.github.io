@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/community/who_uses_dart.html
 title: DART Use Cases
 keywords:
 sidebar: home_sidebar

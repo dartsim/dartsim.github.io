@@ -1,4 +1,5 @@
 ---
+redirect_to: https://github.com/dartsim/dart/blob/main/python/examples/demos/scenes/operational_space_control.py
 title: Rigid Cubes
 keywords: examples
 sidebar: dartpy_examples_sidebar

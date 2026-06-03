@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/papers.html
 title: Citing DART
 sidebar: home_sidebar
 permalink: citing.html

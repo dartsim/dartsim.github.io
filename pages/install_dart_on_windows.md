@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/dart/user_guide/installation.html
 title: Install DART on Windows
 permalink: install_dart_on_windows.html
 keywords: jekyll on windows, pc, ruby, ruby dev kit

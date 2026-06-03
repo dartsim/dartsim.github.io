@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/gallery.html
 title: DART Gallery
 keywords: 
 tags: [getting_started]
