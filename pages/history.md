@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/
 title: DART History
 keywords: 
 tags: [getting_started]
