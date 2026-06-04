@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/
 title: FAQ
 permalink: faq.html
 sidebar: home_sidebar
