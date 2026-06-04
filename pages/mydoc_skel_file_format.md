@@ -1,4 +1,5 @@
 ---
+redirect_to: https://dart.readthedocs.io/en/latest/topics/skel-file-format.html
 title: SKEL File Format
 permalink: skel_file_format.html
 sidebar: home_sidebar
